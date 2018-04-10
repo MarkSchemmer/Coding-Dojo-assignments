@@ -104,13 +104,13 @@ var incomeing = (val) => c(val)
 /*
     I'm assuming a couple of things
 
-        1: I should absolute value of negative numbers to the posotive
+        1: should I use absolute values of negative numbers when adding the negative values together?
 
-        because if that was not what your asking then what is the point fo the problem??
+        because if that was not what your asking then what is the point fo the problem?
 
-        -1 + 1 = 0???? should I just return 0????
+        -1 + 1 = 0 should I just return 0?
 
-        I think not
+        I think not!
 
         so... I will just iterate through 0 to 300,000 and double it
 
