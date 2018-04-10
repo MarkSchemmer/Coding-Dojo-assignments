@@ -106,7 +106,7 @@ var incomeing = (val) => c(val)
 
         1: should I use absolute values of negative numbers when adding the negative values together?
 
-        because if that was not what your asking then what is the point fo the problem?
+        because if that was not what your asking then what is the point of the problem?
 
         -1 + 1 = 0 should I just return 0?
 
