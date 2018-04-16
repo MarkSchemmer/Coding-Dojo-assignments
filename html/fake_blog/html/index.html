@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>My Blog</title>
+    </head>
+    <body>
+        <header>
+            <h1>Mark James Schemmer</h1>
+            <img src="../img/my_photo_with_ruth.jpg" alt="photo of Mark James Schemmer"/>
+        </header>
+        <div class="container">
+            <p class="intro">
+                Hello, I'm Mark. I'm trying to attend and complete the Coding Dojo.
+                I hope I finish the course and recieve 3 black belts for each of 
+                the full stacks.
+            </p>
+            <div class="listStacks">
+                <ul>
+                    The stacks am I going to persue:
+                    <li>Python</li>
+                    <li>MEAN.js</li>
+                    <li>C#/F# .Net framework</li>
+                </ul>
+            </div>
+            <div class="cwStats">
+                <p>The languages and ranks from my codewars profile!</p>
+                <table>
+                    <thead>
+                        <th>Language</th>
+                        <th>Rank</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Js</td>
+                            <td>5kyu</td>
+                        </tr>
+                        <tr>
+                            <td>Python</td>
+                            <td>6kyu</td>
+                        </tr>
+                        <tr>
+                            <td>SQL</td>
+                            <td>7kyu</td>
+                        </tr>
+                        <tr>
+                            <td>F#</td>
+                            <td>7kyu</td>
+                        </tr>
+                        <tr>
+                            <td>C#</td>
+                            <td>4kyu</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <p>Please click the button to see my github page</p>
+                <button><a href="https://github.com/MarkSchemmer">Click</a></button>
+            </div>
+
+            <form action="">
+                <p>Please subscribe for more posts</p>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="text" placeholder="email here">
+                </div>
+                <div>
+                    <input type="radio" id="sendEmail">
+                    <label for="sendEmail">Yes, send me emails</label>
+                    <input type="radio" id="noEmail">
+                    <label for="noEmail">No, please do not send me any emails</label>
+                </div>
+                <div>
+                    <label for="favLanguages">Please select favorite language:</label>
+                    <select id="favLanguages">
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="C#">C#</option>
+                        <option value="F#">F#</option>
+                        <option value="Python">Python</option>
+                        <option value="Ruby">Ruby</option>
+                    </select>
+                </div>
+                <div>
+                    <p>How did you hear about my blog?</p>
+                    <div>
+                        <input type="checkbox" id="face">
+                        <label for="face">Facebook</label>
+                        
+                    </div>
+                    <div>
+                        <input type="checkbox" id="News">
+                        <label for="News">Newspaper</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="ref">
+                        <label for="ref">Referal</label>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="button" value="submit">
+                </div>
+            </form>
+
+        </div>
+    </body>
+</html>
