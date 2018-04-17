@@ -1,0 +1,12 @@
+The commands I used were:
+
+    git add .
+    git commit -m "text"
+    git push
+
+    git revert -n HEAD
+
+    git status
+    git log 
+
+    
