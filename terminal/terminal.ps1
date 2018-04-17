@@ -24,6 +24,21 @@ del ./style.css
 
 
 # navigate back to desktop and make new directory call it 'destination'
+cd \
+mkdir destination
+
+# move the index_2.html file  from 'test' to the 'destination
+Move-Item .\index_2.html 'C:\User\Mark James Schemmer\Desktop\destination'
+
+# Now check to see what files are in the 'test' and 'destination' directories 
+# just use the 'dir' in both files to see
+
+del 'C:\User\Mark James Schemmer\Desktop\destination' -f # I use the -f for -force to make delete all files and sub-files as well.
+
+# moving all these commands to commands.txt
+New-Item commands.txt
+Get-Content .\terminal.ps1 | out-file .\commands.txt 
+
 
 
 
