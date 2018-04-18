@@ -3,22 +3,14 @@
 var c = (val) => console.log(val)
 
 // Don't Worry, Be Happy
-function beHappy(){
-    function beCheerful(){
-        console.log('good morning!')
-    }
-
-    for (let index = 0; index < 98; index++) {
-        beCheerful()
-    }
-}
+var  beCheerful = () => console.log('good morning!');
+var beHappy = () => [...Array(98).keys()].foreach(beCheerful())
 
 
 
 // Multiples of Three - but Not All
 function multiOfThree(){
 var divisBy = (integer, divsor) => integer % divsor == 0 
-
 for(var i = -300; i < 0; i++ ){
     if(i == -3 || i == -6) continue 
     if(divisBy(i,3)) console.log(i)
@@ -92,8 +84,7 @@ function countDojo(){
                                          x = 'Dojo'
                                      if(x%5==0)
                                          x = 'Coding'
-                                    return x 
-
+                                     return x 
                                  }).forEach(x => c(x))
 }
 
@@ -132,18 +123,12 @@ function countFour(){
                             .forEach(x => c(x))
 }
 
-function flexCount(lowNum,highNum,mult){
-     [...Array(highNum).keys()].reverse()
-                               .filter(x => x%mult==0)
-                               .forEach(x => c(x))
-}
+var flexCount = (lowNum,highNum,mult) => [...Array(highNum).keys()].reverse().filter(x => x%mult==0).forEach(x => c(x))
 
 
 
-function finalCount(p1, p2, p3, p4){
-    var mutlOfp1 = v => v%p1==0&&v%p4!=0;
-    [...Array(p3).keys()].filter(x => x > p2-1 && mutlOfp1(x)).forEach(c)
-}
+var mutlOfp1 = v => v%p1==0&&v%p4!=0;
+var finalCount = (p1, p2, p3, p4) => [...Array(p3).keys()].filter(x => x > p2-1 && mutlOfp1(x)).forEach(c)
 
 
 

@@ -1,0 +1,78 @@
+.container{
+    border: 1px black solid;
+    width: 800px;
+    height: 600px;
+    margin: auto;
+    padding:10px;
+    background-color: grey;
+}
+
+header{
+    border: 1px solid black;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+header div {
+    border: 1px solid black;
+    display: inline-block;
+    height: 50px;
+    width: 49%;
+    background-color: red;
+}
+
+main{
+    border: 1px solid black;
+}
+
+main .main{
+    height: 100px;
+    margin:10px;
+    border: 1px solid black;
+    background-color: blue;
+}
+
+
+main .display {
+    padding: 5px;
+    border: 1px solid black;
+    height: 100px;
+    margin : 10px;
+}
+
+main .box{
+    border: 1px solid black;
+    width: 31%;
+    height: 200px;
+    display: inline-block;
+    margin-left: 10px;
+    background-color: yellow;
+}
+
+footer{
+    margin:10px 0px;
+    border: 1px solid black;
+    height: 180px;
+    background-color: green;
+}
+
+footer .foot{
+    border: 1px solid black;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin-top: 50px;
+    text-align: center;
+    background-color: purple;
+}
+
+footer .footContainer{
+    margin:auto;
+    text-align: center;
+}
+
+.clear{
+    display: inline-block;
+    width: 600px;
+}
+
