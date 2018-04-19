@@ -1,0 +1,197 @@
+/*
+    serial
+    sans-serif
+    arial
+
+    Header color: rgb(247,247,247)
+
+*/
+
+.container{
+    width: 970px;
+    margin:0 auto;
+    padding: 10px;
+}
+
+header{
+    background-color: linear-gradient(to right, rgb(243,243,243), rgb(247,247,247)); /* rgb(247,247,247); */
+    padding: 0 5px;
+} 
+
+header h1{
+    display: inline-block;
+}
+
+header h2{
+    display: inline;
+    margin-left: 400px;
+    font-weight: bold;
+}
+
+
+/* Header Notes and styles */
+
+
+
+/*main body*/
+
+/*
+    border color for img : rgb(192,192,192)
+
+
+    background gradient for main tag: rgb(78,59,67)
+
+    main-gradient colors : rgb(54,36,42), rgb(111,89,100)
+
+*/
+
+main{
+    background: radial-gradient(rgb(111,89,100),rgb(54,36,42));
+}
+
+
+.info{
+    display: inline-block;
+    height: 660px;
+}
+
+.aboutCont{
+    width: 100%;
+    padding:15px;
+}
+
+
+
+.aboutCont img{
+    width: 300px;
+    height: 245px;
+    border: 3px solid rgb(192, 192, 192);
+    display: inline-block;
+    vertical-align: top;
+}
+
+.aboutCont .about{
+    background: linear-gradient(to right, rgb(254,254,254),rgb(219,204,218));
+}
+
+/*linear-gradient(to right, rgb(254,254,254),rgb(219,204,218))*/
+.aboutCont .about p{
+  
+    width: 450px;
+    padding-left: 10px;
+}
+
+.aboutCont .about a{
+    padding: 10px;
+}
+
+.aboutCont .about{
+    display: inline-block;
+    margin-left: 160px;
+    padding-bottom: 10px;
+}
+/* radial-gradient( rgb(137,135,148),rgb(166,165,172) )  */
+.aboutCont .about h3{
+    margin-top: 0;
+    padding: 10px; 
+    color: rgb(255,255,255);
+    background: radial-gradient(rgb(137,135,148), rgb(166,165,172));
+}
+
+.lamode, .fam, .five{
+    width:300px;
+    display: inline-block;
+    margin-left: 15px;
+    margin-bottom: 0;
+    vertical-align: top;
+}
+
+
+.lamode p, .fam p, .five p{
+    height: px;
+    background: linear-gradient(to right, rgb(254,254,254),rgb(219,204,218));
+    margin-top: -4px;
+    padding : 5px;
+    display: block;
+}
+
+.main_3{
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    background: radial-gradient(rgb(137,135,148), rgb(166,165,172));
+    margin-bottom: 0;
+}
+
+.main_3-img{
+    width: 100%;
+
+}
+
+.techs{
+    margin-top: -19px;
+}
+
+.techs h3{
+    color:  rgb(255, 255, 255);
+    background: radial-gradient(rgb(137,135,148), rgb(166,165,172));
+    padding: 10px;
+    display: block;
+}
+
+
+
+.lamode_p p, .fam_p p, .five p{
+    height: 190px;
+}
+
+
+.imgs{
+    padding: 15px;
+    background: linear-gradient(to right, rgb(254,254,254),rgb(219,204,218));
+    margin-top: -19px;
+}
+
+.imgs img{
+    width: 35px;
+    height: 35px;
+    margin:2px;
+}
+
+.imgs button{
+    display: block;
+    margin: auto;
+    background-color: rgb(64, 125, 97);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding:5px;
+    color: rgb(255, 255, 255);
+    margin-top: 15px;
+    box-shadow: black 1px 1px 1px 1px;
+}
+
+
+footer{
+    background-color: linear-gradient(to right, rgb(243,243,243), rgb(247,247,247));
+}
+
+footer p{
+    text-align: center;
+}
+
+footer img{
+    width: 20px;
+    height: 20px;
+}
+
+footer a{
+    vertical-align: top;
+}
+
+footer .links{
+    width: 350px;
+    margin:auto;
+}
+
+footer .links img {
+    margin-right: 2px;
+}
