@@ -1,0 +1,176 @@
+/* colors
+    // background main
+    background : radial-gradient(rgb(38,81,117), rgb(53,115,167));
+
+    // background search bar
+    background-color: rgb(68,68,68);
+
+    // golden span saying and links above search bar
+    color: rgb(255,211,67);
+
+    // navbar color of text
+    color: rgb(255,255,255);
+
+    // navbar gradient background
+    background: radial-gradient(rgb(66,123,171), rgb(53,115,167));
+*/
+
+.container{
+    width: 970px;
+    padding:10px;
+    margin: auto;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+}
+
+.cont_head-info{
+    padding:10px;
+    background : radial-gradient(rgb(38,81,117), rgb(53,115,167));
+}
+
+header{
+    display: inline-block;
+}
+
+ header img{
+    width: 330px;
+    display: inline-block;
+}
+
+ .text_search {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 350px;
+    margin-top: -15px;
+}
+
+ .text_search a{
+    color: rgb(255,211,67);
+}
+
+.search{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0 15px;
+    background-color: rgb(68,68,68);
+    margin-top: -10px;
+}
+
+.search input{
+    text-align: center;
+    margin:10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.search button{
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid gray;
+    background-color:rgb(53,115,167);
+    color:rgb(255, 255, 255);
+}
+
+.nav-bar{
+    border: 1px solid black;
+    border-radius: 10px;
+    background: radial-gradient(rgb(194, 210, 223), rgb(53,115,167));
+    box-shadow: black 3px 3px 3px 1px;
+}
+
+.nav-bar ul{
+    text-align: center;
+}
+
+.nav-bar ul li {
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 25px; 
+}
+
+.info{
+    padding: 15px;
+}
+
+.sidebar{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.sidebar ul li::before{
+    content: "\0bb \020";
+}
+
+.sidebar ul li{
+    text-align: center;
+    color: rgb(255,211,67);
+    margin-bottom: 4px;
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+.sidebar ul li a{
+    color: rgb(255, 255, 255);
+}
+
+.text {
+    display: inline-block;
+    width: 600px;
+    margin-left: 130px;
+    text-align: center;
+}
+
+.saying{
+    display: block;
+    margin-bottom: 10px;
+    color: rgb(255,211,67);
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+main{
+    padding: 10px;
+}
+
+main .info{
+    width: 430px;
+    color:black;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin:auto;
+    border-top: rgb(53, 139, 209) 3px solid;
+    padding-top: 0;
+}
+
+main .info a {
+    text-decoration: none;
+}
+
+main .info ul{
+    list-style-type: square;
+}
+
+footer{
+    padding: 10px;
+    background: linear-gradient(rgb(194, 210, 223), rgb(53,115,167));
+}
+
+footer .foot-info{
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer .foot-info a{
+    margin-right: 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+}
+
+
+footer p{
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 0.8em;
+}
