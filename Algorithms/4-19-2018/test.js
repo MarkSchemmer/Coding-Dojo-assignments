@@ -3,6 +3,17 @@ const data = require('./4-19-2018-algos.js')
 const doubleUp = data.doubleUp
 
 
+/*
+        Note to run tests in mocha.js
+
+        go to folder in powershell and run command
+
+        mocha "*.js" -> which will search for all files ending in a .js file
+
+        to make sure that my code actuall fucntions.
+
+*/
+
 describe('testing doubleUp and removeDupes', function(){
     it('test 1 of doubleUp()',function(){
         var input = [1,2,3]

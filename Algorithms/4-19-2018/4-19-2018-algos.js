@@ -6,10 +6,6 @@
     removeDupes() recieve an set and return all elements but distinct [a,a,a,a,a,b,b,b,c,c] -> [a,b,c]
 */
 
-
-
-
-
 /* for future personal documentation!
 
 
@@ -28,18 +24,14 @@
 
 var ar = [0,1]
 function fibonacci(stop, ar){
-    if(stop < 1)
-        return ar
+    if(stop < 1) return ar
     var val = ar[ar.length-1] + ar[ar.length-2]
     ar.push(val)
     return fibonacci(stop-1, ar)
 }
 
-
-
-
-
 var methods = {}
+
 methods.doubleUp = Array.prototype.doubleUp = function(){ 
    return this.map(x => [x,x] ).reduce((c,i) => c.concat(i),[])
 }
