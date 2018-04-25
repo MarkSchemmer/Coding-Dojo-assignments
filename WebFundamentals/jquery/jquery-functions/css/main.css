@@ -53,11 +53,5 @@
 }
 
 #beforeAfter ul li{
-    text-align: center;
-    display: block;
-}
-
-
-.display{
     display: inline-block;
 }

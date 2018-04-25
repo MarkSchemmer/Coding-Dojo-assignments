@@ -93,10 +93,10 @@ $(document).ready(function(){
         }
     })
 
-    $('#beforeAfter ul').hover(function(){
-        $('#beforeAfter ul li').addClass('display')
+    $('#beforeAfter .info').hover(function(){
+      //  $('#beforeAfter .info').addClass('display')
         $(this)
-        .before("<li>1</li>")
-        .after("<li>3</li>")
+        .before("1")
+        .after("3")
     })
 })
