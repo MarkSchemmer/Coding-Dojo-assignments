@@ -1,0 +1,14 @@
+{
+  "name": "4-23-2018",
+  "version": "1.0.0",
+  "description": "Algorithm of the day of 4-23-2018",
+  "main": "4-23-2018.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "author": "Mark James Schemmer",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^5.1.1"
+  }
+}

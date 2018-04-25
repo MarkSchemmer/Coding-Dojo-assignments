@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/jcss.css">
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/jqueryui/jquery-ui.js"></script>
+    <script src="../scripts/scritps.js"></script>
+</head>
+<body>
+<div class="container">  
+    <div class="doc">  
+        <button id="addClass">Add class</button>
+        <button id="removeClasses">Remove Classes</button>
+        <div class="info">
+            <h1>AddClass</h1>
+            <p>
+                Adds the specified class(es) to 
+                each element in the set of matched elements.
+                some notable examples that are from 
+            </p>
+
+            <p>
+                My personal example: 
+                    click button I will add a class to the 
+                    code snippets which will turn the text somewhat white 
+                    and the background black
+            </p>
+
+            <code>$( "p" ).addClass( "myClass yourClass" );</code>
+            <code>$( "p" ).removeClass( "myClass noClass" ).addClass( "yourClass" );</code>
+        </div>
+    </div>
+    <div class="doc">
+            <button id="hideMe">HideMe</button>
+            <button id="showMe">ShowMe</button>
+            <div class="info">
+                    <h1>Hiding and Showing!</h1>
+                    <p>
+                        .hide() hides selected objects 
+                        it can also take a parameter 
+                        "slow" or some default time in 
+                        milisecondeds 
+                        Also I'm going to add a small timer which will 
+                        count down to getting my my photo from GitHub
+                        then you can hide or show my photo!
+                    </p>
+                    <p id="time"></p>
+                    <img class="before" id="myImage" src="">
+            </div>
+    </div>
+    <div class="doc" id="cw">
+        <button id="showCWdata">Toggle</button>
+        <h1>Toggle My data from codewars</h1>
+        <div class="info">
+
+            <p>
+                I'm going to be using the codewars api
+                to get my data, which will will include
+                 my languages that I have trained in 
+            </p>
+            <p>
+
+            </p>
+        </div>
+    </div>
+    <div class="doc" id="slideD">
+        <h1>Slide Up and Down</h1>
+        <button id="slideDown">SlideDown</button>
+        <button id="slideUp">SlideUp</button>
+        <p>Click the button and watch the material slide down!</p>
+        <div class="info">
+                <p>
+
+                        Display the matched elements with a sliding motion.
+                </p>
+                <code>
+                        $( "#clickme" ).click(function() {
+                            $( "#book" ).slideDown( "slow", function() {
+                              // Animation complete.
+                            });
+                          });
+                </code>
+                <code>
+
+                        $( document.body ).click(function () {
+                            if ( $( "div:first" ).is( ":hidden" ) ) {
+                              $( "div" ).slideDown( "slow" );
+                            } else {
+                              $( "div" ).hide();
+                            }
+                          });
+
+                </code>
+        </div>
+    </div>
+    <div class="doc" id="slideToggle">
+        <h1>Toggle the info</h1>
+        <button>ToggleMe</button>
+        <div class="info">
+            <p>Display or hide the matched elements 
+                with a sliding motion.</p>
+
+                <code>
+                        $( "button" ).click(function() {
+                            $( "p" ).slideToggle( "slow" );
+                          });
+                </code>
+
+        </div>
+    </div>
+
+    <div class="doc" id="fader">
+            <h1>Fade the code snippet</h1>
+            <button>FadeInout</button>
+            <div class="info">
+                <p>
+                    A recursive timer to show the secondeds tick Down
+                    then it calls a photo from my github page Yeah!
+                    The Coding Dojo is the best!
+                </p>
+                <code>
+                        <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">              <span style="color: #008800; font-weight: bold">var</span> counter <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">5</span>
+                            <span style="color: #008800; font-weight: bold">function</span> timer(){
+                                setTimeout(<span style="color: #008800; font-weight: bold">function</span>(){
+                                    $(<span style="background-color: #fff0f0">&#39;#time&#39;</span>).text(counter)
+                                    counter<span style="color: #333333">--</span>
+                                    <span style="color: #008800; font-weight: bold">if</span>(counter<span style="color: #333333">&gt;=</span><span style="color: #0000DD; font-weight: bold">0</span>){
+                                        <span style="color: #008800; font-weight: bold">return</span> timer()
+                                    }<span style="color: #008800; font-weight: bold">else</span>{
+                                        $(<span style="background-color: #fff0f0">&#39;#time&#39;</span>).hide(<span style="background-color: #fff0f0">&quot;slow&quot;</span>)
+                                        $(<span style="background-color: #fff0f0">&#39;#myImage&#39;</span>)
+                                        .attr(<span style="background-color: #fff0f0">&#39;src&#39;</span>,<span style="background-color: #fff0f0">&quot;https://avatars3.githubusercontent.com/u/18133440?v=4&quot;</span>)
+                                        .removeClass()
+                                        .addClass(<span style="background-color: #fff0f0">&#39;myImage&#39;</span>)
+                                        .fadeIn(<span style="background-color: #fff0f0">&#39;slow&#39;</span>)
+                                    }
+                          
+                                }, <span style="color: #0000DD; font-weight: bold">1000</span>)
+                            }
+                    
+                            timer()
+                </code>
+            </div>
+    </div>
+
+        <div class="doc" id="beforeAfter">
+            <h1>Before and after</h1>
+            <p>Hover over Number 2</p>
+            <div class="info">
+                <ul>
+                    <li>2</li>
+                </ul>
+            </div>
+        </div>
+</div>
+</body>
+</html>

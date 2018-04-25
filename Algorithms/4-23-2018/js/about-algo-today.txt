@@ -1,0 +1,11 @@
+Problems of the day...
+
+description:
+
+    1:  make function printKeys(obj)...
+
+    2: make function printVals(obj)...
+
+    3: Unzip(obj) return [[Tkeys][TValues]]
+
+    4; Zip -> zipping both arrays together into 1 obj 

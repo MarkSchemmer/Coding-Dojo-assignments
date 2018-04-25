@@ -1,0 +1,63 @@
+.container{ 
+    width: 100%;
+    padding:15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.doc{
+    padding-top: 0px;
+    border-bottom: 4px solid black;
+    padding-bottom: 30px;
+    margin-top: 35px;
+}
+
+.doc .info h1{
+    margin-top: 0px;
+}
+
+.doc .info p{
+    min-width: 400px;
+    max-width: 900px;
+}
+
+.doc button{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 30px;
+    padding :10px;
+    border-radius: 2px;
+    border: none;
+    margin-right: 20px;
+}
+
+.doc .info{
+    display: inline-block;
+}
+
+.doc .info code {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#slideToggle button{
+    display: block;
+}
+
+#fader .info code {
+    max-width: 800px;
+    display: block;
+}
+
+#fader .info{
+    display: block;
+}
+
+#beforeAfter ul li{
+    text-align: center;
+    display: block;
+}
+
+
+.display{
+    display: inline-block;
+}

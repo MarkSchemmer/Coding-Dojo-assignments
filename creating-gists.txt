@@ -1,0 +1,20 @@
+When creating a new gist in GitHub, 
+
+first install Gist Extension by Ken Howard
+
+then, when coding and you have a new code snippet
+
+send the code to a new file in my gists folder 
+
+Powershell commands for file and adding content 'New-Item' path{filename}, 'Add-Content' path content 
+
+It's a lot better if I just use the 'Add-Content' with path{filename} and the content between the " ...... " 
+
+click command Ctrl+Shift+P
+
+enter create block, and then name and password 
+
+then follow the prompt ... 
+
+
+and boom your gist is online!

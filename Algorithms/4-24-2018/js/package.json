@@ -1,0 +1,14 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "description": "solutons for the days algorithsm ",
+  "main": "4-24-2018-algos.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "author": "Mark James Schemmer",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^5.1.1"
+  }
+}

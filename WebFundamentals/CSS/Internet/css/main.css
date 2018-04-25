@@ -1,210 +1,95 @@
+
 *{
-    margin: 0px;
-    padding: 0px;
-    color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container{
+.cont{
     width: 970px;
-    border: 1px solid black;
-    padding: 10px;
+    border:1px solid black;
+    padding:15px;
 }
 
 header{
-    height: 400px;
-    width: 100%;
-    display: inline-block;
-}
-
-header .header-top{
-    height:100px; 
     width: 100%;
 }
 
-header .header-top img{
-    width: 100px;
+header img{
+    margin-bottom: 0px;
+    width:100px;
     display: inline-block;
-    margin-top: 12px;
+    position: relative;
+    top: 15px;
 }
 
-header .header-top h1{
+header h1{
     display: inline-block;
-    font-size: 40px;
-    vertical-align: top;
-    margin-top: 30px;
-    color: #484848;
-    font-weight: lighter;
-    margin-left: -10px;
+    margin-bottom: 0px;
 }
 
-header .header-top a{
-    text-decoration: none;
-    color: #22659e;
+header h2{
+    margin-top: 0px;
+    padding:15px 15px 15px 0px;
+    background:radial-gradient(#296aa1,#4c7fab);
+    color: whitesmoke;
+    font-weight: bolder;
+    margin-bottom: 10px;
 }
 
-header .header-middle{
-    height: 80px; 
-    width: 99%;
-    padding-left: 10px;
-    background: radial-gradient(#25669f, #4e80ab)
-}
 
-header .header-middle h2{
-    line-height: 80px;
-    color:#fcfdfe;
-    font-weight: lighter;
-}
-
-.sidebar {
-    display: inline-block;
-    vertical-align: top;
-    margin-top: -214px;
+.sidebar{
+    width: 260px;
 }
 
 .sidebar .sidebar-top{
-    width: 170px;
-    height: 170px;
+    width: 100%;
+    padding:35px 35px 0px 35px;
+    margin-bottom: 15px;
     border-bottom: 1px solid black;
-    margin-bottom: 20px;
+    height: 211px;
 }
 
 .sidebar .sidebar-top p{
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-.sidebar .sidebar-top .lower-p{
-    font-size: 0.8em;
-    text-align: left;
+    text-align:left;
+    width: 80%;
 }
 
 .sidebar .sidebar-top button{
-    width: 100%;
-    margin-bottom: 5px;
-    padding:5px;
-    border-radius: 4px;
-    box-shadow: 1px 1px 1px black;
-    color: white;
-}
-
-.sidebar .sidebar-top .btn-top{
-    background:linear-gradient(#5e94c1,#2a6ba3);
-}
-
-.sidebar .sidebar-top .btn-bottom{
-    background: linear-gradient(#ebad57,#ef7600);
-}
-
-.sidebar .sidebar-bottom{
-    width: 170px;
-}
-
-.sidebar .sidebar-bottom .ad_background{
-    width: 170px;
-    position: absolute;
-    z-index: 1;
-}
-
-.sidebar .sidebar-bottom .ninja{
-    width: 70px;
-    position: absolute;
-    z-index: 2;
-    left:50px;
-    margin-top:100px;
-}
-
-.sidebar .sidebar-bottom p{
-    position: absolute;
-    z-index: 3;
-    color: white;
-    width: 125px;
-    text-align: center;
-    line-height: 1.3em;
-    font-weight: bold;
-    left:30px;
-    margin-top: 10px;
-}
-
-.sidebar .sidebar-bottom button{
-    position: absolute;
-    z-index: 3;
-    margin-top: 210px;
-    width: 113px;
-    margin-left: 20px;
-    padding:3px;
-    border-radius: 5px;
-    color: white;
-    font-weight: lighter;
-    background: linear-gradient(#6dcfdf,#02b6d3);
-}
-
-
-main{
-    width: 795px;
-    height: 400px;
-    display: inline-block;
-    margin-top: -220px;
-}
-
-main .contact{
-    height: 80px;
-    width: 93%;
-    vertical-align: top;
-    position: relative;
-    top:-174px;
-    border-bottom: 1px solid black;
-    margin-left: 31px;
-}
-
-main .contact .contact-house img{
-    width: 20px;
-}
-
-main .contact .contact-phone img{
-    width: 47px;
-}
-
-main .contact .contact-house{
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 476px;
-    margin-top: 8px;
-}
-
-main .contact .contact-house a{
-    vertical-align: top;
-    text-decoration: none;
-    position: relative;
-    top: 2px;
-    left: 3px;
-    color: #25679f;
-    font-weight: lighter;
-    
-}
-
-main .contact .contact-phone{
-    display: inline-block;
-    margin: 15px 0 0 36px;
-}
-
-main .contact .contact-phone img{
-    display: inline-block;
-    vertical-align: top;
-}
-
-main .contact .contact-phone p{
-    display: inline-block;
-    color:#02c0df;
-}
-
-main .contact .contact-phone span{
     display: block;
-    font-size: 0.5em;
+    padding:7px;
+    width: 76%;
+    margin:auto;
+    margin-bottom: 6px;
+}
+
+.sidebar .sidebar-low{
+    width: 100%;
+    height: 272px;
+    background-image: url("../img/ad_background.png");
+    padding-top: 13px;
+}
+
+
+.sidebar .sidebar-low p{
+    z-index: 1;
+    color:white;
+    width: 100%;
     text-align: center;
 }
 
-.contact-bottom{
-    
+.sidebar .sidebar-low img{
+    width: 90px;
+    padding: 2px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
+.sidebar .sidebar-low button{
+    display: block;
+    padding: 7px;
+    margin: auto;
+    margin-right: 33px;
+    width: 82%;
+    border-radius: 3px;
+}

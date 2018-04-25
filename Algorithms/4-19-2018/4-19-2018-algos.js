@@ -30,13 +30,12 @@ function fibonacci(stop, ar){
     return fibonacci(stop-1, ar)
 }
 
-var methods = {}
 
-methods.doubleUp = Array.prototype.doubleUp = function(){ 
+Array.prototype.doubleUp = function(){ 
    return this.map(x => [x,x] ).reduce((c,i) => c.concat(i),[])
 }
 
-methods.removeDupes = Array.prototype.removeDupes = function(){
+Array.prototype.removeDupes = function(){
     var dic = {}
     this.forEach(x => {
         if(!dic.hasOwnProperty(x))
@@ -45,4 +44,6 @@ methods.removeDupes = Array.prototype.removeDupes = function(){
     return Object.keys(dic).map(x => dic[x])
 }
 
+methods.doubleUp = doubleUp
+methods.removeDupes = removeDupes
 module.exports = methods

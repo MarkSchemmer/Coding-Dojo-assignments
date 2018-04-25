@@ -1,0 +1,25 @@
+        // function getData(){
+        //     $.get('https://www.codewars.com/api/v1/users/Ze-Marcos',function(data){
+        //         var name = data.name
+        //         var userName = data.username 
+        //         var honor = data.honor
+        //         var skillz = Object.keys(data.ranks.languages).map(x => x)
+        //         var lang = data.languages
+        //         var counter = 1
+        //         $('#cw info')
+        //         .append("<h1>"+name+"</h1>")
+        //         .append("<h1>"+userName+"</h1>")
+        //         .append("<h1>"+"My Honor:"+honor+"</h1>")
+        //         .append("My Languages: <table> <tr> <th> Name: </th></tr>")
+    
+        //         $.each(skillz,function(value,index){
+        //             $('#cw info').append("<tr><td>"+index+"</td></tr>")
+        //         })
+    
+        //         // $('#cw).each(skillz, function(index,value){
+        //         //   //  $('#cw').append("<tr><td>"+value+"</td></tr>") 
+        //         // })
+
+
+        //     })
+        // }
