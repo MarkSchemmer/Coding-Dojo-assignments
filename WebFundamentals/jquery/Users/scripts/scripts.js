@@ -56,7 +56,6 @@ $(document).ready(function(){
         'margin-right':'0px',
     })
 
-
     function makeTable(json){
             console.log(json)
             var tableRowClass = json[0].value+json[1].value
@@ -65,17 +64,10 @@ $(document).ready(function(){
                 $('<td>'+element.value+'</td>').appendTo('.nav ul')
             });
             $('</tr>').appendTo('.nav ul')
-        
     }
-
 
     $('#addUser').submit(function(event){
         makeTable(JSON.parse(JSON.stringify(jQuery(this).serializeArray())))
         return false 
     })
-
-
-
-
-
 })
