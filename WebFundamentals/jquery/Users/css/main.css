@@ -1,0 +1,12 @@
+.form-box label{
+    width: 100px;
+    margin-right: 100px;
+}
+
+.form-box input{
+margin: 0px;
+}
+
+td{
+    padding: 20px;
+}
