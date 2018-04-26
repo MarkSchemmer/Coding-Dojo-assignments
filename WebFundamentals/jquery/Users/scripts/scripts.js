@@ -1,9 +1,6 @@
 $(document).ready(function(){
 
     var userData = ['First Name', 'Last Name', 'Email Address', 'Contact#']
-
-
-
     $('.cont').css({
         'width':'800px',
         'height':'800px',
@@ -73,9 +70,7 @@ $(document).ready(function(){
 
 
     $('#addUser').submit(function(event){
-        var obj = {}
         makeTable(JSON.parse(JSON.stringify(jQuery(this).serializeArray())))
-
         return false 
     })
 
