@@ -116,7 +116,6 @@ $(document).ready(function(){
             $(imageClass).attr('src',characterImage)
             console.log($('.player1').val())
             var charactersOnly = characters.filter((e,i) => i > 0)
-
             if(~charactersOnly.indexOf($('.player1').val()) && ~charactersOnly.indexOf($('.player2').val())){
                 $('.fight').html('<h3>FIGHT</h3>')
             }else{

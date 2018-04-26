@@ -45,7 +45,6 @@ var coinMachine = function(num){
             break;
         }
     }
-
     return {
         'pennys':pennys,
         'nickels':nicks,
