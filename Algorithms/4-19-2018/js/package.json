@@ -1,0 +1,11 @@
+{
+  "name": "algors-4-26-2018",
+  "version": "1.0.0",
+  "description": "Algorithsm for 4-26-2018",
+  "main": "4-26-2018.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "author": "Mark James Schemmer",
+  "license": "ISC"
+}
