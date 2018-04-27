@@ -12,7 +12,7 @@ $(document).ready(function(){
             'border-radius':'10px',
             'font-family':'Arial'
         })
-    
+        
         $('.info-area').css({
             'width':'400px',
             'height':'250px',
@@ -114,13 +114,11 @@ $(document).ready(function(){
             var name = $(this).val()
             var characterImage = characterImageKeys[name]
             $(imageClass).attr('src',characterImage)
-            console.log($('.player1').val())
             var charactersOnly = characters.filter((e,i) => i > 0)
-            if(~charactersOnly.indexOf($('.player1').val()) && ~charactersOnly.indexOf($('.player2').val())){
+            if(~charactersOnly.indexOf($('.player1').val()) && ~charactersOnly.indexOf($('.player2').val()))
                 $('.fight').html('<h3>FIGHT</h3>')
-            }else{
+            else
                 $('.fight').html('')
-            }
         })
     }
     addContentToInfoButton()
