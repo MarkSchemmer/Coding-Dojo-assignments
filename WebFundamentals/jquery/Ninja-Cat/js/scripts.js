@@ -1,6 +1,3 @@
-
-
-
 var cats = ['cat0.png','cat1.png','cat2.png','cat3.png','cat4.png']
 var ninjas = ['ninja0.png','ninja1.png','ninja2.png','ninja3.png','ninja4.png']
 
