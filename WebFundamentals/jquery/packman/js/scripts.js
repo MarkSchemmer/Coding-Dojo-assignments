@@ -117,7 +117,8 @@ function drawWorld(){
     }
     $('.map').html(htmlStr)
 
-    $('.score_board').html('<p>Points:</p><p class="points">'+points+'</p>')
+    $('.score_board')
+    .html('<p>Points:</p><p class="points">'+points+'</p>')
     .css({
         'font-weight':'bolder',
         'margin-left':'25px',

@@ -1,6 +1,5 @@
 
 $(document).ready(function(){
-
     function addContentToInfoButton(){
 
         $('.cont').css({
