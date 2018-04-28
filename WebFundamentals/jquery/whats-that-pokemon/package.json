@@ -1,0 +1,14 @@
+{
+  "name": "whats-that-pokemon",
+  "version": "1.0.0",
+  "description": " What's that Pokemon? assignment for Coding Dojo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mark James Schemmer",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
