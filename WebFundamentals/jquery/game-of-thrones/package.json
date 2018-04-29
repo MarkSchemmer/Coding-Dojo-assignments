@@ -1,0 +1,15 @@
+{
+  "name": "game-of-thrones",
+  "version": "1.0.0",
+  "description": "game of thrones api homework assignment for Coding Dojo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mark James Schemmer",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "jqueryui": "^1.11.1"
+  }
+}
