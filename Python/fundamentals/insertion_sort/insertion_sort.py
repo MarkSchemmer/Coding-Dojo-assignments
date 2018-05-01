@@ -13,5 +13,3 @@ print(insertion_sort([2,3,4,45,7,-9,1]))
 
 
 
-
-
