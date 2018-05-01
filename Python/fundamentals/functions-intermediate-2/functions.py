@@ -34,9 +34,12 @@ def studs_users (user):
     for x in user.keys():
          str += x + ' \n \n '
          for y in user[x]:
-             str += y['first_name'] + ' ' + y['last_name'] + ' \n '
+             str += y['first_nlsame'] + ' ' + y['last_name'] + ' \n '
     return str 
+print(studs_users(users)) 
 
-print(studs_users(users))
 
 
+beta = [1,2,3,4,-5,-8,-9,0]
+pos_count = lambda arr : len(list(filter(lambda x: x > 0, arr)))
+print(pos_count(beta))

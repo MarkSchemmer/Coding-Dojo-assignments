@@ -14,5 +14,4 @@ def plus_len(arr): return arr[:1]+len(arr)
 gtr = lambda x, y: x > y 
 def greater_sec(arr,n):return [x for x in arr if gtr(x,n) ]
 
-
      
