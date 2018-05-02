@@ -1,0 +1,17 @@
+
+.cont{
+    width: 600px;
+    margin:auto;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.blueBox{
+    background-color: blue;
+}
+
