@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <div class="cont">
+        <div class="main">
+            <h1>Dojo Fruit Store!</h1>
+            <h3>What would you like to buy?</h3>
+            <form action="/checkout" method="POST">
+                    <table>
+                            <tr>
+                                <th>Fruit Name: </th>
+                                <th>Quanity: </th>
+                            </tr>
+                        <tr>
+                            <td>Strawberry</td>
+                            <td>
+                                <select name="straw" id="">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Rasberry</td>
+                            <td>
+                                <select name="raz" id="">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </td>
+                            </tr>
+                            <tr>
+                                <td>Apple</td>
+                                <td>
+                                    <select name="apple" id="">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </td>
+                            </tr>
+                    </table>
+                    <h3>Your information</h3>
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" placeholder="Name">
+                    <label for="studId">Your Id:</label>
+                    <input type="text" name="studId" placeholder="id:">
+                    <input type="submit" name="submit" value="submit">
+        </form>
+        </div>
+        <div class="sidebar">
+
+        </div>
+    </div>
+</body>
+</html>
