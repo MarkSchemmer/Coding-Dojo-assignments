@@ -16,11 +16,7 @@ def genRandomFiles(num):
             num = num - 1
     return arr 
 
-
-
 m = lambda src : '<img src="../static/img/'+str(src)+'"/>'
-
-
 
 def make_img(files):
     return rd(lambda acc, item: acc + m(item), files, '' )
