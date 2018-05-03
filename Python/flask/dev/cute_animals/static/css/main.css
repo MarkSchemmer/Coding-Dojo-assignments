@@ -1,0 +1,13 @@
+
+
+.cont{
+    max-width: 400px;
+    margin:auto;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
