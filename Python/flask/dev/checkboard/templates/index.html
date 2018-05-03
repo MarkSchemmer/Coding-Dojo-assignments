@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="../static/node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <div class="cont">
+        {{ table|safe }}
+    </div>
+</body>
+</html>
