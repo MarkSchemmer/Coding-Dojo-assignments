@@ -1,0 +1,14 @@
+{
+  "name": "5-4-2018",
+  "version": "1.0.0",
+  "description": "algos",
+  "main": "algos.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "author": "Mark James Schemmer",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^5.1.1"
+  }
+}
