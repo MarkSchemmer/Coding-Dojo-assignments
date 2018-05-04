@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <h1>Counter</h1>
+    {{ count | safe }}
+    <form method="POST" action="/">
+        <input type="hidden" name="a" value="counter">
+        <input type="submit" value="add 2">
+    </form>
+
+    <form action="/" method="POST">
+        <input type="hidden" name="cl" value="clear">
+        <input type="submit" value="clear session">
+    </form>
+</body>
+</html>
