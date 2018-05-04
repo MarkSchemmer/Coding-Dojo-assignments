@@ -1,0 +1,17 @@
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+<div class="High-or-low">
+        <p class="r">Too High!</p>
+</div>
+
+<div class="answer">
+        <form action="/" method="POST">
+            <input type="hidden" name="action" value"guess">
+            <input type="submit" value="submit">
+            <input type="text" name="guessed">
+        
+        </form>
+    </div>

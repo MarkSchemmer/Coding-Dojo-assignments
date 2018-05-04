@@ -1,0 +1,16 @@
+<head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    </head>
+    
+    <div class="win">
+            <p>The number was {{rand | safe}}</p>
+            <p class="r">You win!</p>
+            <div class="answer">
+                    <form action="/" method="POST">
+                        <input type="hidden" name="restart" value"playAgain">
+                        <input class="hideme" type="text" name="restart" value="playAgain">
+                        <input type="submit" value="submit">
+                    </form>
+                </div>
+    </div>
+    

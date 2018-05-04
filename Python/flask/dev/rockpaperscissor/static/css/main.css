@@ -1,0 +1,11 @@
+div.cont{
+    width: 200px;
+    margin:auto;
+    padding:30px;
+    border:1px solid black;
+}
+
+input{
+    display: block;
+    margin-bottom: 25px;
+}

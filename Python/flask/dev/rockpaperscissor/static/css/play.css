@@ -1,0 +1,25 @@
+
+.cont{
+    width:800px;
+    margin:auto;
+}
+
+.name1{
+    margin-right:100px;
+}
+
+.name1, .name2{
+    display: inline-block;
+}
+
+
+.info{
+    display: inline-block;
+    border:1px solid black;
+    width: 400px;
+    height: 400px;
+}
+
+.info2{
+    display: inline-block;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <script src="{{ url_for('static', filename='js/node_modules/jquery/dist/jquery.js') }}"></script>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/play.css') }}">
+        <script type="text/javascript">
+            var options = '{{ options | tojson }}'
+            var imgRock = '{{ images["rock"] | tojson }}'.slice(1).slice(0,-1)
+            var imgPaper = '{{ images["paper"] | tojson }}'.slice(1).slice(0,-1)
+            var imgSciz = '{{ images["scissors"] | tojson }}'.slice(1).slice(0,-1)
+            var ai = '{{ ai | tojson }}'.slice(1).slice(0,-1)
+            console.log(ai)
+            var globe
+            var rockPaperScizDict = {
+                'rock':imgPaper,
+                'paper':imgRock,
+                'scissors':imgSciz
+            } 
+
+
+            var aiImgs = []
+ 
+            function countDown(num){
+                  
+                  setTimeout(function(){
+                      $('.counter').html('<h1>'+num+'</h1>')
+                      num--
+                      if(num >= 0){
+                          return countDown(num)
+                      }
+                      else{
+                           $('.info').html(rockPaperScizDict[globe])
+                                     .css({
+                                        'width':'150px',
+                                        'height':'150px',
+                                        'border':'1px solid black',
+                                        'margin':'auto',
+                                        'display':'inline-block',
+                                        'margin-left':'300px',
+                                        'margin-right':'50px',
+                                        'margin-top':'50px'
+                                    })
+                           console.log(rockPaperScizDict[ai])
+                           $('.info2').html(rockPaperScizDict[ai]) 
+                                      .css({
+                                        'width':'150px',
+                                        'height':'150px',
+                                        'border':'1px solid black',
+                                        'margin':'auto',
+                                        'display':'inline-block',
+                                        'margin-top':'50px'
+                                    })
+                          
+                           $('.info img').css({
+                               'width':'150px',
+                               'height':'150px',
+                               'display':'inline-block',
+
+                           })
+
+                           $('.info2 img').css({
+                               'width':'150px',
+                               'height':'150px',
+                               'display':'inline-block',
+                           })
+
+                           $('.counter').hide('slow')
+                      }
+                  },1000)
+          }
+
+
+            $(document).ready(function(){
+                $('.name2').css({
+                    'vertical-align':'top'
+                })
+
+
+                countDown(5)
+            })
+
+            $(document).on('change',function(){
+                globe = $('.name1 option:selected').val()
+            })
+
+        </script>
+</head>
+<body>
+    <div class="counter">
+
+    </div>
+    <div class="cont">
+        {{ data | safe }}
+    </div>
+    <div class="info">
+
+        </div>
+        <div class="info2">
+    
+        </div>
+
+
+</body>
+</html>
