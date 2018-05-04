@@ -1,0 +1,47 @@
+
+.cont{
+    width:890px;
+    margin:auto;
+    border:1px solid black;
+    padding:20px;
+}
+
+.info{
+    width:170px;
+    height: 170px;
+    display: inline-block;
+    border:1px solid black;
+    padding:20px;
+    margin-top: 50px;
+    margin-right: 10px;
+}
+
+.info h1, p, form{
+    text-align: center;
+}
+
+
+.tArea{
+    width: 843px;
+    height: 192px;
+    overflow-x: scroll;
+    padding-left:none;
+}
+
+.tArea p{
+    text-align: left;
+    padding-left: 0px;
+}
+
+.green{
+    color:green;
+}
+
+.red{
+    color:red;
+}
+
+
+.cl{
+    text-align: left;
+}
