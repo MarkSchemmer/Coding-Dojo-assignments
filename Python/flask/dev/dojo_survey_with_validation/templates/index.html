@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='node_modules/bootstrap/dist/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+</head>
+<body>
+    <div class="cont form-group">
+            {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for mes in messages %}
+            <div class="alert alert-danger">
+               <strong> {{ mes | safe }} </strong>
+            </div>  
+            {% endfor %}
+        {% endif %}
+    {% endwith%}
+        <form class="" action="/result" method="POST">
+                <input type="hidden" value="info">
+
+                <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" name="name" value="{{ session['name'] | safe }}">
+                </div>
+                <div class="form-group">
+                        <label for="location">Dojo Location</label>
+                        <input type="text" name="location" value="{{ session['location'] | safe }}">
+                </div>
+                <div class="form-group">
+                        <label for="cs">Favorite Language</label>
+                        <select name="cs" id="" value="">
+                            <option value=""></option>
+                            <option value="python">Python</option>
+                            <option value="C#">C#</option>
+                            <option value="F#">F#</option>
+                            <option value="javascript">Javascript</option>
+                        </select>
+                </div>
+                <div class="form-group">
+                        <label class="textLab" for="comment">Comment(required)</label>
+                        <textarea name="comment" id="" 
+                        cols="90" 
+                        rows="10">{{ session['comment'] | safe }}</textarea>
+                </div>
+                <div class="form-group">
+                    <input class="btn btn-success" type="submit" value="submit">
+                </div>
+        </form>
+    </div>
+</body>
+</html>
