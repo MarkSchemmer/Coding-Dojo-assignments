@@ -1,0 +1,45 @@
+
+
+/*
+        <div class="cont">
+            <form action="/" method="POST">
+                <div class="form-group">
+                    <label for="email">Emai:</label>
+                    <input type="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="first_name">First Name:</label>
+                    <input type="text" name="first_name">
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" name="last_name">
+                </div>
+                <div class="form-group">
+                    <label for="pass">Password:</label>
+                    <input type="password" name="pass">
+                </div>
+                <div class="form-group">
+                    <label for="conf">Password Confirmation:</label>
+                    <input type="password" name="conf">
+                </div>
+                <div class="form-group">
+                        <button type="submit" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-ok"></span> Submit</button>
+                </div>
+            </form>
+        </div>
+
+
+*/
+
+
+
+label, label.inline{
+    display: inline-block;
+    width:200px;
+}
+
+/*
+    Yeah!
+
+*/
