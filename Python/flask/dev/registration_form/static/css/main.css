@@ -1,0 +1,11 @@
+.cont{
+    width: 600px;
+    margin:auto;
+    border: 1px solid black;
+    padding:50px;
+}
+
+label, label.inline{
+    display: inline-block;
+    width:200px;
+}
