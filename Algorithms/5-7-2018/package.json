@@ -1,0 +1,11 @@
+{
+  "name": "5-7-2018",
+  "version": "1.0.0",
+  "description": "Algos for 5-7-2018 Singly linked list ",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "author": "Mark James Schemmer",
+  "license": "ISC"
+}
