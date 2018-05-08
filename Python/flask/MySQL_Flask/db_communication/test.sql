@@ -1,0 +1,3 @@
+DROP DATABASE friends;
+
+CREATE DATABASE friends;

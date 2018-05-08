@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static',filename='node_modules/bootstrap/dist/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}">
+</head>
+<body>
+        <div class="cont">
+
+                <div class="friend_info container-fluid">
+                    {{ user_data | safe }}
+                </div>
+            <div class="new_friend">
+                <h1>Add a friend</h1>
+                <form action="/" method="POST" class="">
+                            <div class="form">
+                                    <label for="first_name">First Name:</label>
+                                    <input type="text" name="first_name">
+                            </div>
+
+                            <div class="form">
+                                <label for="last_name">Last Name: </label>
+                                <input type="text" name="last_name">
+                            </div>
+
+                            <div class="form">
+                                <label for="oc">Occupation: </label>
+                                <input type="text" name="oc">
+                            </div>
+
+                            <div class="form">
+                                <button class="btn btn-success" type="submit">Add</button>
+                            </div>
+                </form> 
+            </div>
+        </div>
+</body>
+</html>
