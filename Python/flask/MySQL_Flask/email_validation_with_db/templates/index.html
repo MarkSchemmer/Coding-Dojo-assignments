@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static',filename='node_modules/bootstrap/dist/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <div class="cont">
+        <h1>Email Validation wiht DB</h1>
+        {% with errors = get_flashed_messages(category_filter=["errors"]) %}
+            {% for mes in errors %}
+                <div class="alert alert-danger">
+                    {{ mes | safe }}
+                </div>
+            {% endfor %}
+        {% endwith %}
+
+        {% with errors = get_flashed_messages(category_filter=["taken_email"]) %}
+            {% for mes in errors %}
+                <div class="alert alert-danger">
+                    {{ mes | safe }}
+                </div>
+            {% endfor %}
+        {% endwith %}
+
+        <div class="search">
+            <form class="form" action="/success" method="POST">
+                <div class="e">
+                        <label for="email">Email Address:</label>
+                        <input type="text" placeholder="Email Please" name="email">
+                </div>
+      
+                <button class="btn btn-normal" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+.cont{
+    width:800px;
+    border:1px solid black;
+    margin:auto;
+    padding:50px;
+}
+
+h1{
+    margin-bottom:20px;
+}
+
+
+.e{
+    margin-bottom:30px;
+}
+
+
+label, label.inline{
+    display: inline-block;
+    width:200px;
+}
+
+input{
+    width: 400px;
+}
+
+
+.search button{
+    display: block;
+}
+
+.go_back form{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.display_info form{
+    margin-bottom:5px;
+}
+
+.clear_email span{
+    width:200px;
+    display: inline-block;
+}
+
+.person{
+    padding:10px;
+}
+
+.person button {
+    display: inline-block;
+}

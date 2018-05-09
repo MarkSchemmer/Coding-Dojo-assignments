@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static',filename='node_modules/bootstrap/dist/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <div class="cont">
+        <h1>Email Validation wiht DB</h1>
+        <div class="issues">
+                {% with errors = get_flashed_messages(category_filter=["success"]) %}
+                {% for mes in errors %}
+                    <div class="alert alert-success">
+                        {{ mes | safe }}
+                    </div>
+                {% endfor %}
+            {% endwith %}
+        </div>
+        <div class="go_back">
+            <form class="form" action="/" method="POST">
+                <button class="btn btn-normal" type="submit">Go Back</button>
+            </form>
+            <form action="/clear" class="form" method="POST">
+                <button class="btn btn-normal">Clear DataBase</button>
+            </form>
+        </div>
+
+        <div class="display_info">
+            {% for key in data %}
+            <form action="/clear_email", method="POST"name="mform">
+                    <input type="hidden" name="id" value="{{ key.id }}">
+                    <input type="hidden" name="email" value="{{ key.email }}">
+                    <input type="hidden" name="date" value="{{key._date }}">
+                    <div class="person">
+                        <span>{{key.id}}</span>
+                        <span>{{key.email}}</span>
+                        <span>{{key._date}}</span>
+                        <span><button class="btn btn-danger" type="submit">Delete</button></span>
+                    </div>
+            </form>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
