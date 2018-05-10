@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='node_modules/bootstrap/dist/css/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+        <div class="cont">
+            <h1>Please Login.</h1>
+
+                {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                        {% for key in messages %}
+                            <div class="issues alert alert-danger">
+                                    <strong>{{ key }}</strong>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+                <form action="/login_success" method="POST">
+                    <div class="field">
+                            <label for="email">Email:</label>
+                            <input type="text" name="email">
+                    </div>
+                    <div class="field">
+                        <label for="pass">Password:</label>
+                        <input type="password" name="pass">
+                    </div>
+                    <div class="field">
+                        <button class="btn btn-success" type="submit">Submit</button>
+                    </div>
+                </form>
+
+                <div class="field register">
+                    <form action="/reg" method="POST">
+                    <p><strong>Don't have an account then Register</strong></p>
+                    <button class="btn btn-info" type="submit">Register</button>
+                    </form>
+                </div>
+        </div>    
+</body>
+</html>

@@ -1,0 +1,28 @@
+.cont{
+    width:600px;
+    padding:50px;
+    margin:auto;
+    border:1px solid black;
+}
+
+.cont h1{
+    margin-bottom:15px;
+}
+
+.cont .field{
+    margin-bottom:15px;
+}
+
+.cont .field input{
+    width:250px;
+}
+
+
+label, label.inline{
+    width:200px;
+    display: inline-block;
+}
+
+.register strong{
+    display: block;
+}

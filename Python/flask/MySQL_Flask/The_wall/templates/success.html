@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='node_modules/bootstrap/dist/css/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+        {% with messages = get_flashed_messages(category_filter=["success"]) %}
+        {% if messages %}
+        {% for mes in messages %}
+              <div class=" alert alert-success">  <strong>{{ mes }}</strong> </div>
+        {% endfor %}
+        {% endif %}
+    {% endwith %}  
+    <h1>Hello </h1>
+    {{ user[0]['user_name'] | safe }}
+    <form action="/logout" method="POST" id="logout">
+        <button class="btn btn-primary" type="submit" form="logout">Logout</button>
+    </form>
+</body>
+</html>
