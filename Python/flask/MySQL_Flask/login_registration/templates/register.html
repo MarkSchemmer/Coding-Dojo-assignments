@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='node_modules/bootstrap/dist/css/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+        <div class="cont">
+            <h1>Please Register.</h1>
+            {% with messages = get_flashed_messages(category_filter=["blank"]) %}
+                {% if messages %}
+                {% for mes in messages %}
+                    <div class=" alert alert-danger issues">
+                        <strong>{{ mes }}</strong>
+                    </div>
+                {% endfor %}
+                {% endif %}
+            {% endwith %}
+
+            <form action="/" method="POST" id="login_page"></form>
+
+                <form action="/success" method="POST">
+                    {% with messages = get_flashed_messages(category_filter=["names"]) %}
+                    {% if messages %}
+                    {% for mes in messages %}
+                          <div class=" alert alert-danger email">  <strong>{{ mes }}</strong> </div>
+                    {% endfor %}
+                    {% endif %}
+                {% endwith %}
+                    <div class="field">
+                            <label for="user_name">User Name:</label>
+                            <input type="text" name="user_name">
+                    </div>
+                    <div class="field">
+                        <label for="first_name">First Name:</label>
+                        <input type="text" name="first_name">
+                    </div>
+                    <div class="field">
+                        <label for="last_name">Last Name:</label>
+                        <input type="text" name="last_name">
+                    </div>
+       
+                    <div class="field">
+                            {% with messages = get_flashed_messages(category_filter=["email"]) %}
+                            {% if messages %}
+                            {% for mes in messages %}
+                                  <div class=" alert alert-danger email">  <strong>{{ mes }}</strong> </div>
+                            {% endfor %}
+                            {% endif %}
+                        {% endwith %}  
+                        <label for="email">Email:</label>
+                        <input type="text" name="email">
+                    </div>
+                    <div class="field">
+                            {% with messages = get_flashed_messages(category_filter=["password"]) %}
+                            {% if messages %}
+                            {% for mes in messages %}
+                                  <div class=" alert alert-danger email">  <strong>{{ mes }}</strong> </div>
+                            {% endfor %}
+                            {% endif %}
+                        {% endwith %} 
+                        {% with messages = get_flashed_messages(category_filter=["password_length"]) %}
+                        {% if messages %}
+                        {% for mes in messages %}
+                              <div class=" alert alert-danger email">  <strong>{{ mes }}</strong> </div>
+                        {% endfor %}
+                        {% endif %}
+                    {% endwith %}   
+                        <label for="pass">Password:</label>
+                        <input type="password" name="pass">
+                    </div>
+                    <div class="field">
+                            {% with messages = get_flashed_messages(category_filter=["password"]) %}
+                            {% if messages %}
+                            {% for mes in messages %}
+                                  <div class=" alert alert-danger email">  <strong>{{ mes }}</strong> </div>
+                            {% endfor %}
+                            {% endif %}
+                        {% endwith %}  
+                        <label for="conf">Confirm Passowrd:</label>
+                        <input type="password" name="conf">
+                    </div>
+                    <div class="field">
+                        <button class="btn btn-primary" type="submit">Register</button>
+                        <button class="btn btn-primary" type="submit" form="login_page">Back to Login</button>
+                    </div>
+                </form>
+        </div>    
+</body>
+</html>
