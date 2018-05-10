@@ -12,10 +12,49 @@
         {% endfor %}
         {% endif %}
     {% endwith %}  
-    <h1>Hello </h1>
-    {{ user[0]['user_name'] | safe }}
+    <h1>The Wall</h1>
+    <p>Hello {{ user[0]['user_name'] | safe }}</p>
     <form action="/logout" method="POST" id="logout">
         <button class="btn btn-primary" type="submit" form="logout">Logout</button>
     </form>
+
+    <div class="user_sidebar">
+        <!-- display all users here! -->
+        <h1>Users!</h1>
+        {% for _user in users %}
+            <div class="user">
+               {{ _user | safe }}
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="make_comment">
+        <form action="/make_message" method="POST">
+                <input type="hidden" name="email" value="{{ user[0]['email'] }}">
+                <input type="hidden" name="user" value="{{ user[0]['id'] }}">
+                <textarea name="message" id="" cols="30" rows="10"></textarea>
+                <button type="submit">post message</button>
+        </form>
+    </div>
+
+    <div class="display">
+        <!-- display messages here then display comments that are part of each message -->
+        {% for mes in messages %}
+            <div class="commnet">{{ mes }}
+
+                {% for com in comments %}
+                    {% if com['users_id'] == mes['users_id']%}
+                    {{ com }}
+                    {% endif %}
+                {% endfor %}
+                <form action="/make_comment" method="POST">
+                            <input type="hidden" name="users_id" value="{{ mes['users_id'] }}">
+                            <input type="hidden" name="messages_id" value="{{ mes['id'] }}">
+                            <textarea name="comment" id="" cols="30" rows="2"></textarea>
+                            <button type="submit">post comment</button>
+                </form>
+            </div>
+        {% endfor %}
+    </div>
 </body>
 </html>
