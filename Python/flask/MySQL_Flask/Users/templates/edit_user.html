@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='node_modules/materialize-css/dist/css/materialize.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>Add User</title>
+</head>
+<body>
+
+    <div class="cont">
+        <div class="row">
+                <form class="col s12" action="/update_user" method="POST">
+                <input type="hidden" name="id" value="{{ user[0]['id'] }}">
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <input placeholder="first_name" name="first_name" type="text" class="validate" value="{{ user[0]['first_name']}}">
+                    </div>
+                    <div class="input-field col s6">
+                      <input name="last_name" type="text" class="validate" placeholder="last_name" value="{{ user[0]['last_name']}}">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input name="email" type="email" class="validate" value="{{user[0]['email'] | safe}}">
+                    </div>
+                  </div>
+                  <button class="btn waves-effect waves-light" type="submit">Edit User</button>
+                  <a href="/">Go Back</a>
+                </form>
+              </div>
+              </div>
+</body>
+</html>

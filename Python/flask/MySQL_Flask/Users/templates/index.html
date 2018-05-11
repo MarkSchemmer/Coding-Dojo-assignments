@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='node_modules/materialize-css/dist/css/materialize.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>Users</title>
+</head>
+<body>
+    <div class="cont">
+                <table class="highlight">
+                    <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>Full Name</th>
+                        <th>Email</th>
+                        <th>Created At</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                             {% for user in users %}
+                                <tr>
+                                    {% for u in user %}
+                                        <td>{{ user[u]}}</td>
+                                    {% endfor %}
+                                    <td>
+                                            <a href="/show_user/{{user['id']}}">Show</a>
+                                            <a href="/edit_user/{{user['id']}}">Edit</a>
+                                            <a href="/delete_user/{{ user['id']}}">Delete</a>
+                                    </td>            
+                                </tr>
+                            {% endfor %}
+                    </tbody>
+                </table>
+
+            <div class="add_user">
+                    <form action="/add_user" method="GET">
+                        <button type="submit">add a user</button>
+                    </form>
+            </div>
+      </div>
+</body>
+</html>
