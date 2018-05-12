@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    <div class="cont">
+        <div class="count">
+            <h1>Random Word (attempt # {{count}} )</h1>
+        </div>
+        <div class="random_word">
+            <input type="text" value="{{word}}">
+        </div>
+        <div class="form">
+            <form action="/clear_session" id="clear" method="POST" >{% csrf_token %}</form>
+            <form action="/gen_word" method="POST">
+                {% csrf_token %}
+                <button type="submit">Generate</button>
+                <button form="clear" type="submit">Clear Session</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

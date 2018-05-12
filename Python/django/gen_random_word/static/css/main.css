@@ -1,0 +1,16 @@
+.cont{
+    width: 400px;
+    border:1px solid black;
+    margin:auto;
+    padding:50px;
+}
+
+
+.random_word input{
+    padding:20px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom:10px;
+    font-weight: bolder;
+}
