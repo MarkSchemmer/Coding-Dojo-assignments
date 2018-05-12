@@ -1,0 +1,14 @@
+
+.cont{
+    border:1px solid black;
+    padding:15px;
+}
+
+label{
+    display:block;
+    margin-bottom: 25px;
+}
+
+input, select {
+    margin-bottom: 15px;
+}

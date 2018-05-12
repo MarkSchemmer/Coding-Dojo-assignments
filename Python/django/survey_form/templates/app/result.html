@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+        <div class="cont">
+            <p>{{count}}</p>
+            <div class="info">
+                <p>{{name}}</p>
+                <p>{{location}}</p>
+                <p>{{lang}}</p>
+                <p>{{com}}</p>
+            </div>
+            <a href="/">Go Back</a>
+        </div>
+</body>
+</html>

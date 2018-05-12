@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+        <div class="cont">
+            <form action="/input" method="POST"> {% csrf_token %}
+                <div class="info">
+                    <label for="name">Your Name:</label>
+                    <input type="text" name="name">
+                </div>
+                <div class="info">
+                    <label for="location">Location: </label>
+                    <select name="location" >
+                        <option value="Mountain View">Mountain View</option>
+                        <option value="Seattle">Seattle</option>
+                        <option value="San Jose">San Jose</option>
+                        <option value="San Diego">San Diego</option>
+                    </select>
+                </div>
+                <div class="info">
+                    <label for="lang">Favorite Language: </label>
+                    <select name="lang">
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="C#">C#</option>
+                        <option value="F#">F#</option>
+                        <option value="Python">Python</option>
+                    </select>
+                </div>
+                <div class="info">
+                        <label for="com">Comment:</label>
+                        <textarea placeholder="Hello" name="com" cols="30" rows="10"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+</body>
+</html>
