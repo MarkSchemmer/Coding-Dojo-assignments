@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+ <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cont">
+        <div class="title">
+            <h1>The Current time and date</h1>
+        </div>
+        <div class="display">
+            <p>{{ t }}</p>
+        </div>
+    </div>
+</body>
+</html>
