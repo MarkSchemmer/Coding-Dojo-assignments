@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    <div class="cont">
+            <h1>Add a New word</h1>
+            <form action="/create_word" method="POST">
+                {% csrf_token %}
+                <input type="text" name="word">
+                <h3>Choose a color</h3>
+                <input type="radio" name="color" value="red" checked> Red<br>
+                <input type="radio" name="color" value="green"> Green<br>
+                <input type="radio" name="color" value="blue"> Blue  
+                <div class="chec">
+                        <input type="hidden" name="big" value="small">
+                        <input type="checkbox" name="big" value="big"> Show in Big fonts!
+                </div>
+                <button type="submit">Add to Session</button>
+            </form>
+    </div>
+    <div class="display">
+            {%for x in request.session.list %}
+                <p class="{{x.color}} {{x.size}}">{{x.name}}</p>
+            {% endfor %}
+    </div>
+</body>
+</html>

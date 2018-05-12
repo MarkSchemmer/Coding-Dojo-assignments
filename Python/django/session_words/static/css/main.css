@@ -1,0 +1,33 @@
+.cont, .display{
+    border:1px solid black;
+    padding:25px;
+    width:500px;
+    display: inline-block;
+}
+
+.chec{
+    margin-bottom:10px;
+}
+
+
+.display{
+    vertical-align: top;
+}
+
+
+.green{
+    color:green;
+}
+
+.red{
+    color:red;
+}
+
+.blue{
+    color:blue;
+}
+
+.big{
+    font-size: 1.3em;
+    font-weight: bolder;
+}
