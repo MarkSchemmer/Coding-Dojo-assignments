@@ -1,0 +1,51 @@
+
+
+
+.cont{
+    width: 950px;
+    margin:auto;
+    margin-bottom:25px;
+    margin-top:20px;
+}
+
+.cont input{
+    padding:15px;
+}
+
+.info{
+    width: 950px;
+    margin:auto;
+}
+
+
+
+.place{
+    border:1px solid black;
+    padding:10px;
+    display: inline-block;
+    width: 200px;
+    margin-right:10px;
+}
+
+
+.neg {
+    color:red;
+}
+
+.pos {
+    color:green;
+}
+
+.act{
+    width: 950px;
+    margin:auto;
+}
+
+.txt{
+    width: 950px;
+    height: 100px;
+    border:1px solid black;
+    padding:10px;
+    overflow-y: scroll;
+    margin:auto;
+}

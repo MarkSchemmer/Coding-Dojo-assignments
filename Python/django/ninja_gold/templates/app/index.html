@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="{% static 'node_modules/bootstrap/dist/css/bootstrap.css' %}">
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    <div class="cont">
+        Your Gold: <input type="text"  value="{{request.session.amount | safe}}">
+    </div>
+    <div class="info">
+            {% for x in places %}
+                <div class="place">
+                    <h1>{{x.place}}</h1>
+                    <p>{{x.earns}}</p>
+                    <form action="/process" method="POST">
+                        {% csrf_token %}
+                        <input type="hidden" value="{{x.place}}" name="place">
+                        <button class="btn btn-primary" type="submit">Find Gold</button>
+                    </form>
+                </div>
+            {% endfor %}
+    </div>
+
+    <div class="act">
+            <h1>Activitys:</h1>
+        <div class="txt">
+
+            {% for mes in request.session.mes %}
+                {{ mes | safe }}
+            {% endfor %}
+        </div>
+    </div>
+
+</body>
+</html>
