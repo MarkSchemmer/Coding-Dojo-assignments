@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'app_users',
     'dojo_ninjas',
     'books_authors',
+    'likes_books',
 ]
 
 MIDDLEWARE = [
