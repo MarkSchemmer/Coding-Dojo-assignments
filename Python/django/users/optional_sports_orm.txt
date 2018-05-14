@@ -1,0 +1,57 @@
+
+'''
+
+1 all baseball leagues 
+League.objects.filter(sport__contains='BaseBall')
+
+2. all womens leagues
+League.objects.filter(name__contains='Womens')
+
+
+3. ...all leagues where sport is any type of hockey
+League.objects.filter(name__contains='Hockey')
+
+
+4... .all leagues where sport is something OTHER THAN football
+>>>   League.objects.exclude(name__contains='Football')
+
+5...all leagues that call themselves "conferences"
+>>> League.objects.filter(name__contains='confer')
+
+7...all teams based in Dallas
+ Team.objects.filter(location__contains='Dallas')
+
+8...all teams named the Raptors
+Team.objects.filter(team_name='Raptors')
+
+
+9...all teams whose location includes "City"
+Team.objects.filter(location__contains='City')
+
+
+10...all teams whose names begin with "T"
+Team.objects.filter(team_name__iregex=r'^T')
+
+
+11...all teams, ordered alphabetically by location
+>>> Team.objects.order_by('team_name')
+
+
+12...all teams, ordered by team name in reverse alphabetical order
+>>> Team.objects.order_by('-team_name')
+
+13...every player with last name "Cooper"
+Player.objects.filter(last_name='Cooper')
+
+
+14...every player with first name "Joshua"
+Player.objects.filter(first_name='Joshua')
+
+
+15...every player with last name "Cooper" EXCEPT those with "Joshua" as the first name
+>>> Player.objects.filter(last_name='Cooper').exclude(first_name='Joshua')
+
+
+16...all players with first name "Alexander" OR first name "Wyatt"
+>>> Player.objects.filter(first_name='Alexander')| Player.objects.filter(first_name='Wyatt')
+'''
