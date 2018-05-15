@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'node_modules/bootstrap/dist/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    <div class="cont">
+                <h1>Users</h1>
+                <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                            <th scope="col" >Actions</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for u in users %}
+                        <tr> 
+                            <th scope="row">{{u.id}}</th>
+                            <td><a href="/show/{{u.id}}">{{u.first_name}}</a></td>
+                            <td>{{u.last_name}}</td>
+                            <td>{{u.email}}</td>
+                            <td>
+                                <form action="/show/{{u.id}}" method="GET">
+                                    <input type="submit" value="Show">
+                                </form>
+                                <form action="/edit/{{u.id}}" method="GET">
+                                    <input type="submit" value="edit">
+                                </form>
+                                <form action="/delete/{{u.id}}" method="GET">
+                                    <input type="submit" value="delete">
+                                </form>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                <h4><a href="{% url 'add_user' %}">Add a new User</a></h4>
+          </div>
+
+
+</body>
+</html>
