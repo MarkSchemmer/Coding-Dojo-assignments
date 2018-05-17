@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'node_modules/bootstrap/dist/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+        {% if request.session.success %}
+        <div class="alert alert-success">
+            <strong>{{ request.session.success }} {{user.first_name}}</strong>
+        </div>
+        {% endif %}
+        <a href="/logout">Logout</a>
+</body>
+</html>
+
