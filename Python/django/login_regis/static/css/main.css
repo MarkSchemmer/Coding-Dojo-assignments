@@ -1,0 +1,27 @@
+.cont{
+    width:700px;
+    margin:auto;
+}
+
+
+
+label, label.inline{
+    width: 200px;
+    display: inline-block;
+}
+
+input{
+    width: 275px;
+}
+
+
+.regis{
+    border:1px solid black;
+    padding: 25px;
+    margin-bottom:20px;
+}
+
+.log{
+    border:1px solid black;
+    padding:25px;
+}
