@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+   <div class="intro">
+       <h3>Hello {{ user.first_name }}</h3>
+       <p>Welcome to your wall</p>
+       <form action="/wall/message" method="POST">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="message">Write Message</label>
+            <input type="hidden" value="{{request.session.user_id}}" name="user_id">
+            <textarea 
+            class="form-control"
+            rows="3" 
+            name="message"
+            placeholder="Must be less than 255 chars"></textarea>
+          </div>
+          <button class="btn btn-info">Submit</button>
+      </form>
+   </div>
+   <div class="info">
+       <!-- 
+           Here will go all the messages that ruth has made and as well all the other people
+           who have messaged her as well 
+
+           also on every message is the ability to make a comment 
+           The message will display when it was created and by whom 
+           the same functionality applies to comments 
+
+           A user can make many messages 
+           and make many comments 
+
+          A message can have many comments 
+       -->
+
+
+       <div class="messages">
+        {% for u in users %}
+                {% for mes in u.all_messages.all %}
+                    <div class="tweet">
+                        <div class="card" style="width: 35rem;">
+                            <div class="card-body">
+                            <h5 class="card-title">{{u.first_name}} {{u.last_name }} wrote </h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Created at {{ mes.created_at }}</h6>
+                            <p class="card-text">{{ mes.message }}</p>
+                            <a href="#" class="card-link">Like</a>
+                            <a href="#" class="card-link">Comment</a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+       {% endfor %}
+       </div>
+
+      
+
+   </div>
+{% endblock %}

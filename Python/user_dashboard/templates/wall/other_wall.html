@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+   <div class="intro">
+       <h3> Leave a message on {{ other_user.first_name }}'s Wall</h3>
+       <form action="/wall/message" method="POST">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="message">Write Message</label>
+            <input type="hidden" value="{{request.session.user_id}}" name="user_id">
+            <input type="hidden" value="{{other_user.id}}" name="other_user">
+            <textarea 
+            class="form-control"
+            rows="3" 
+            name="message"
+            placeholder="Must be less than 255 chars"></textarea>
+          </div>
+          <button class="btn btn-info">Submit</button>
+      </form>
+   </div>
+{% endblock %}

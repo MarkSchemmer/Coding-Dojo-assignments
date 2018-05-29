@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="{% static 'node_modules/bootstrap/dist/css/bootstrap.css' %}"> 
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+
+    <div class="cont">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Test App</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="{% url 'intro' %}">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    {% if request.session.user_auth %}
+                    <li class="nav-item active">
+                        <a class="nav-link" href="dashboard/{{request.session.user_id}}/edit">Info</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="{% url 'dashboard:dash' %}">Dashboard</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="{% url 'wall:wall' %}">Wall</a>
+                    </li>
+                    {% endif %}
+                    </ul>
+                    {% if request.session.user_auth %}
+                    <a href="{% url 'logout' %}" class="btn btn-outline-success my-2 my-sm-0">Log out</a>
+                    {% else %}
+                    <a href="{% url 'signin' %}" class="btn btn-outline-success my-2 my-sm-0">Log in</a>
+                    {% endif %}
+                </div>
+              </nav>
+
+                {% block content%}
+
+                
+                {% endblock content %}
+
+          
+                <footer>
+                  <p>&copy; 2016 Company, Inc.</p>
+                </footer>
+
+
+            </div>
+
+    </div>
+</body>
+</html>
+    

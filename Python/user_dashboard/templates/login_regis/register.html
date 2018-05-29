@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="regis">
+        <h1>Registration</h1>
+        <form action="/reg" method="POST">
+                {% csrf_token %}
+            <div class="form-group">
+                    {% if request.session.errors.first_name %}
+                                <div class="alert alert-danger">
+                                        <p>{{request.session.errors.first_name}}</p>
+                                </div>
+                    {% endif %}
+                    <label for="first_name">First Name</label>
+                    <input type="text" class="form-controfl" placeholder="First Name" name="first_name" value="{{request.session.user_data.first_name}}">
+            </div>
+            <div class="form-group">
+                        {% if request.session.errors.last_name %}
+                        <div class="alert alert-danger">
+                                <p>{{request.session.errors.last_name}}</p>
+                        </div>
+                        {% endif %}
+                    <label for="last_name">Last Name</label>
+                    <input type="text" class="form-controfl" placeholder="Last Name" name="last_name" value="{{request.session.user_data.last_name}}">
+            </div>
+            <div class="form-group">
+                        {% if request.session.errors.email %}
+                        <div class="alert alert-danger">
+                                <p>{{request.session.errors.email}}</p>
+                        </div>
+                        {% endif %}
+                    <label for="email">Email</label>
+                    <input type="text" class="form-controfl" placeholder="Email" name="email" value="{{request.session.user_data.email}}">
+            </div>
+            <div class="form-group">
+                        {% if request.session.errors.ps %}
+                               {% for x in request.session.errors.ps %}
+                               <div class="alert alert-danger">
+                                        <p>{{x | safe }}</p>
+                                </div>
+                               {% endfor %}
+                        {% endif %}
+                    <label for="ps">Password</label>
+                    <input type="text" class="form-controfl" placeholder="Password" name="ps">
+            </div>
+            <div class="form-group">
+                    <label for="psconf">Confirm Passowrd</label>
+                    <input type="text" class="form-controfl" placeholder="Confirm Password" name="psconf">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+</div>
+{% endblock content %}

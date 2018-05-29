@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="edit-information">
+    <form action="/dashboard/info" method="POST">
+        <h3>Edit information</h3>
+        {% csrf_token %}
+        <input type="hidden" value="{{user.id}}" name="id">
+        <div class="form-group">
+                    <label for="first_name">First Name</label>
+                    <input type="text" name="first_name" class="form-control" value="{{ user.first_name }}" >
+        </div>
+            <div class="form-group">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" name="last_name" class="form-control" value="{{ user.last_name }}">
+            </div>
+            <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="text" name="email" class="form-control" value="{{ user.email }}" >
+            </div>
+            <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+</div>
+
+    <div class="edit-information">
+                <form action="/dashboard/desc" method="POST">
+                    <h3>Edit Description</h3>
+                    {% csrf_token %}
+                    <input type="hidden" value="{{user.id}}" name="id">
+                    <div class="form-group">
+                            <textarea class="form-control" name="desc" id="desc" rows="5" >
+                                {{ user.description }}
+                            </textarea>
+                    </div>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                </form>
+    </div>
+
+    <div class="edit-information">
+            <form action="/dashboard/pass" method="POST">
+                <h3>Change Password</h3>
+                {% csrf_token %}
+                <input type="hidden" value="{{user.id}}" name="id">
+                <div class="form-group">
+                            <label for="ps">Password</label>
+                            <input type="text" name="ps" class="form-control">
+                </div>
+                <div class="form-group">
+                        <label for="psconf">Password Confirmation</label>
+                        <input type="text" name="psconf" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary">Update Password</button>
+            </form>
+    </div>
+{% endblock %}

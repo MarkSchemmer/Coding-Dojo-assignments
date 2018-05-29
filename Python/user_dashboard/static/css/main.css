@@ -1,0 +1,44 @@
+.cont{
+    max-width: 1200px;
+    margin:auto;
+}
+
+
+
+
+
+label, label.inline{
+    width: 200px;
+    display: inline-block;
+}
+
+.log{
+    padding:25px;
+}
+
+input{
+    width: 400px;
+}
+
+
+.edit-information{
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+
+
+.intro{
+    margin-bottom: 25px;
+}
+
+
+.info{
+
+}
+
+.tweet{
+    width:558px;
+    margin:auto;
+    padding:10px;
+    margin-bottom:15px;
+}
