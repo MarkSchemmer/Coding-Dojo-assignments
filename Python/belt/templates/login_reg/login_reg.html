@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+<!--  make sure to load static files and to load static in the base !!!-->
+
+{% block content %}
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+                  <form id="reg_form" action="reg" method="POST">
+                          {% csrf_token %}
+                          {% if request.session.errors.name or request.session.errors.alias %}
+                              <div class="alert alert-danger">
+                                  <p>Name and Alias should be greater than 8 chars</p>
+                              </div>
+                          {% endif %}
+                          <div class="form-group">
+                                  <label for="name">Name</label>
+                                  <input type="text" class="form-control" name="name">
+                          </div>
+                          <div class="form-group">
+                                  <label for="alias">Alias</label>
+                                  <input type="text" class="form-control" name="alias">
+                          </div>
+                          {% if request.session.errors.email %}
+                          <div class="alert alert-danger">
+                              <p>{{ request.session.errors.email}}</p>
+                          </div>
+                          {% endif %}
+                          <div class="form-group">
+                                  <label for="email">Email</label>
+                                  <input type="text" class="form-control" name="email">
+                          </div>
+                          {% if request.session.errors.ps %}
+                          <div class="alert alert-danger">
+                              <p>{{ request.session.errors.ps}}</p>
+                          </div>
+                          {% endif %}
+                          <div class="form-group">
+                                  <label for="ps">Password</label>
+                                  <input type="password" class="form-control" name="ps">
+                          </div>
+                          <div class="form-group">
+                                  <label for="psconf">Confirm Password</label>
+                                  <input type="password" class="form-control" name="psconf">
+                          </div>
+                  </form>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" form="reg_form" class="btn btn-primary">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Welcome to Book Reviewer</h1>
+      <p class="lead">Don't have an account well </p>
+      <button type="button" class="btn btn-primary" data-toggle="modal" id="modalbtn">
+            Register Here
+    </button>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      Login
+    </div>
+    <div class="f card-body">
+                <form action="login" method="POST">
+                  {% csrf_token %}
+                  {% if request.session.errors %}
+                      <div class="alert alert-danger">
+                          <p>Login Error</p>
+                      </div>
+                  {% endif %}
+                        <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="text" class="form-control" name="email">
+                        </div>
+                        <div class="form-group">
+                                <label for="ps">Password</label>
+                                <input type="password" class="form-control" name="ps">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+    </div>
+  </div>
+
+
+{% endblock %}

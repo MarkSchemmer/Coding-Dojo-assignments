@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<nav class="navbar navbar-light bg-light justify-content-between">
+        <a class="navbar-brand"> Welcome {{ request.session.alias | safe  }}</a>
+        <form class="form-inline">
+                <a href="/books/add" class="add-book"> Add a book and review</a>
+                <a class="btn btn-outline-success my-2 my-sm-0" href="/books/logout">Logout</a>
+        </form>
+</nav>
+<hr>
+
+<h3>Most Recent Reviews</h3>
+<hr>
+<div class="reviews">
+        {% for rev in reviews %}
+        <div class="card">
+                <h5 id="{{rev.id}}" class="card-header">
+                        <script>
+                            var str = '<span class="fa fa-star checked"></span>'.repeat(Number('{{rev.rating}}'))
+                            $(str).appendTo('#{{rev.id}}')
+                        </script>
+                        <span><a href="/books/{{rev.book.id}}">{{rev.book.title}}</a></span>
+                </h5>
+                <div class="card-body">
+                  <a href="/user/{{rev.reviewer.id}}" class="card-title"> {{ rev.reviewer.name }} </a> Wrote
+                  <p class="card-text"> {{ rev.desc }} </p>
+                </div>
+        </div>
+        {% endfor %}
+</div>
+
+<div class="other_books">
+    <h4>Other books with other reviews</h4>
+    <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+            <div class="list-group">
+                {% for book in all_books %}
+                    <a href="/books/{{book.id}}" class="list-group-item list-group-item-action">{{book.title}}</button>
+                {% endfor %}
+            </div>
+    </div>
+</div>
+{% endblock %}

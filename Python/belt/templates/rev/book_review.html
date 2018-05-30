@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Create Review</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                    <form id="new_review" action="/books/new_review/{{book_id}}" method="POST">
+                            {% csrf_token %}
+                            <input type="hidden" value="{{request.session.user_id}}" name="user_id">
+                            <input type="hidden" value="{{author_id}}" name="author_id">
+                            <input type="hidden" value="{{book_id}}" name="book_id">
+
+                            <div class="form-group">
+                                    <label for="review">Review</label>
+                                    <textarea type="text" class="form-control" name="review" rows="5"> </textarea>
+                            </div>
+                            
+                            <div class="form-group col-sm-4">
+                                    <label for="rate">Rating</label>
+                                    <select class="form-control" name="rate">
+                                      <option selected value="1">1</option>
+                                      <option value="2">2</option>
+                                      <option value="3">3</option>
+                                      <option value="4">4</option>
+                                      <option value="5">5</option>
+                                    </select>
+                            </div>
+                    </form>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" form="new_review" class="btn btn-primary">Submit Review</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+<nav class="navbar navbar-light bg-light justify-content-between">
+        <a class="navbar-brand"> Welcome {{ request.session.alias | safe  }}</a>
+        <form class="form-inline">
+                <a href="/books" class="add-book">Home</a>
+                <a class="btn btn-outline-success my-2 my-sm-0" href="/books/logout">Logout</a>
+        </form>
+</nav>
+<hr>
+<div class="info">
+    <h3>{{ book_name }}</h3>
+    <h4>Author: {{ author.name }}</h4>
+    <button type="button" class="btn btn-primary" data-toggle="modal" id="modalbtn">
+            Add Review
+    </button>
+</div>
+<hr>
+<div class="reviews">
+        {% for rev in reviews %}
+        <div class="card">
+                <h5 id="{{rev.id}}" class="card-header">
+                        <script>
+                            var str = '<span class="fa fa-star checked"></span>'.repeat(Number('{{rev.rating}}'))
+                            $(str).appendTo('#{{rev.id}}')
+                        </script>
+                </h5>
+                <div class="card-body">
+                  <h5 class="card-title"> {{ rev.reviewer.name }} </h5>
+                  <p class="card-text"> {{ rev.desc }} </p>
+                </div>
+        </div>
+        {% endfor %}
+
+     
+</div>
+<div class="add_review">
+
+</div>
+{% endblock %}

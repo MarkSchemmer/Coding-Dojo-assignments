@@ -1,0 +1,49 @@
+.cont{
+    padding:25px;
+    max-width: 1000px;
+    min-width: 400px;
+    margin:auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.cont .f{
+    max-width: 600px;
+}
+
+.cont .f button{
+    padding:10px;
+}
+
+
+.add-book{
+    margin-right:20px;
+}
+
+.add_book_form{
+    max-width: 600px;
+    margin-top: 25px;
+}
+
+.checked{
+    color:orange;
+}
+
+.card{
+    margin-bottom:10px;
+}
+
+
+.reviews, .other_books{
+    display: inline-block;
+}
+
+.reviews{
+    margin-right:15px;
+}
+
+.other_books{
+    vertical-align: top;
+    height: 400px;
+    overflow-y: scroll;
+}
