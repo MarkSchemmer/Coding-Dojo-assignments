@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'node_modules/bootstrap/dist/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <script src="{% static 'node_modules/jquery/dist/jquery.js' %}"></script>
+    <script src="{% static 'js/scripts.js' %}"></script>
+</head>
+<body>
+    <div class="cont">
+            <div class="demo_1">
+                    <h2>Demo 1 - get users </h2>
+                    <button type="submit"  id="users_json" class="btn btn-primary mb-2">Get all Users JSON</button>
+                    <button type="submit" id="users_html" class="btn btn-primary mb-2">Get all Users in HTML</button>
+
+                    <div class="display_1"> 
+                        <p>Place Holder for the users</p>
+                    </div>
+            </div>
+            <div class="demo_2">
+                    <h2>Demo 2 - Ajax search</h2>
+                    <h3>Find a user</h3>
+                    <form id="find_user" action="/find_user" method="POST"> {% csrf_token %}
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Search User">
+                        <button type="submit" class="btn btn-primary mb-2">Search</button>
+                    </form>
+                    <div class="dem_2"> 
+                        <p>Place Holder for the Ajax Form part II</p>
+                    </div>
+            </div>
+        <div class="demo_3">
+            <h2>Demo 3 - Ajax Form II</h2>
+            <h3>Create a new user</h3>
+            <form id="create_user" action="/create_user" method="POST"> {% csrf_token %}
+                <div class="form-group"><label for="first_name">First Nmae:</label>
+                    <input class="form-control" type="text" name="first_name"></div>
+                <div class="form-group"><label for="last_name">Last Name:</label>
+                    <input class="form-control" type="text" name="last_name"></div>
+                <div class="form-group"><label for="email">Email</label>
+                    <input class="form-control" type="text" name="email"></div>
+                <button class="btn btn-primary" type="submit"> Create User</button>
+            </form>
+            <div class="show_new_user"> 
+                <p>Place Holder for the Ajax Form part II</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

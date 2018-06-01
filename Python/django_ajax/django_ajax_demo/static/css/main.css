@@ -1,0 +1,17 @@
+
+.demo_3, .demo_2, .demo_1{
+    border:1px solid black; 
+    padding:25px;
+    margin:auto;
+    width: 600px;
+}
+
+.form-control{
+    width:300px;
+}
+
+.show_new_user{
+    margin-top:25px;
+    padding:25px;
+    border:1px solid silver;    
+}
