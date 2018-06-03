@@ -17,7 +17,7 @@ namespace puzzles
             var set = new HashSet<string>();
             var name = new string[] {"Todd", "Tiffany", "Charlie", "Geneva", "Sydney"};
             while(set.Count()<name.Count())
-                set.add(name[rnd.Next(0,name.Count()+1)]);
+                set.Add(name[rnd.Next(0,name.Count()+1)]);
             return set.ToArray();
             
         }
