@@ -1,0 +1,10 @@
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\language_fundamentals\multiplication_table\bin\Debug\netcoreapp2.0\multiplication_table.deps.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\language_fundamentals\multiplication_table\bin\Debug\netcoreapp2.0\multiplication_table.runtimeconfig.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\language_fundamentals\multiplication_table\bin\Debug\netcoreapp2.0\multiplication_table.runtimeconfig.dev.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\language_fundamentals\multiplication_table\bin\Debug\netcoreapp2.0\multiplication_table.dll
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\language_fundamentals\multiplication_table\bin\Debug\netcoreapp2.0\multiplication_table.pdb
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\language_fundamentals\multiplication_table\obj\Debug\netcoreapp2.0\multiplication_table.csproj.CoreCompileInputs.cache
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\language_fundamentals\multiplication_table\obj\Debug\netcoreapp2.0\multiplication_table.AssemblyInfoInputs.cache
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\language_fundamentals\multiplication_table\obj\Debug\netcoreapp2.0\multiplication_table.AssemblyInfo.cs
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\language_fundamentals\multiplication_table\obj\Debug\netcoreapp2.0\multiplication_table.dll
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\language_fundamentals\multiplication_table\obj\Debug\netcoreapp2.0\multiplication_table.pdb
