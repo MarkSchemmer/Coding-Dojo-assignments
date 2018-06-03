@@ -16,7 +16,7 @@ namespace basic_13
         static int Average(int[] array) => array.Sum()/array.Count();
         static int GreaterThanY(int[] array, int y) => array.Where(x => x > y).Count();
         static int[] elimNeg(int[] array) => array.Select(x => x > 0 ? x : 0).ToArray();
-        static int[] shift(int[] array) => array.Skip(1).ToList().Add(0).ToArray()
+        static int[] shift(int[] array) => array.Skip(1).ToList().Add(0).ToArray();
         static string[] numberToString(int[] array) => array.Select(x => x > 0 ? x.ToString() : 'Dojo').ToArray();
 
 
