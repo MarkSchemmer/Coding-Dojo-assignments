@@ -1,0 +1,10 @@
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\firstSharp\bin\Debug\netcoreapp2.0\firstSharp.deps.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\firstSharp\bin\Debug\netcoreapp2.0\firstSharp.runtimeconfig.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\firstSharp\bin\Debug\netcoreapp2.0\firstSharp.runtimeconfig.dev.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\firstSharp\bin\Debug\netcoreapp2.0\firstSharp.dll
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\firstSharp\bin\Debug\netcoreapp2.0\firstSharp.pdb
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\firstSharp\obj\Debug\netcoreapp2.0\firstSharp.csproj.CoreCompileInputs.cache
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\firstSharp\obj\Debug\netcoreapp2.0\firstSharp.AssemblyInfoInputs.cache
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\firstSharp\obj\Debug\netcoreapp2.0\firstSharp.AssemblyInfo.cs
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\firstSharp\obj\Debug\netcoreapp2.0\firstSharp.dll
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\firstSharp\obj\Debug\netcoreapp2.0\firstSharp.pdb
