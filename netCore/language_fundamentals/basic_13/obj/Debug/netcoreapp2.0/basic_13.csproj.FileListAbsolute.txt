@@ -1,0 +1,10 @@
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\language_fundamentals\basic_13\obj\Debug\netcoreapp2.0\basic_13.csproj.CoreCompileInputs.cache
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\language_fundamentals\basic_13\obj\Debug\netcoreapp2.0\basic_13.AssemblyInfoInputs.cache
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\language_fundamentals\basic_13\obj\Debug\netcoreapp2.0\basic_13.AssemblyInfo.cs
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\language_fundamentals\basic_13\bin\Debug\netcoreapp2.0\basic_13.deps.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\language_fundamentals\basic_13\bin\Debug\netcoreapp2.0\basic_13.runtimeconfig.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\language_fundamentals\basic_13\bin\Debug\netcoreapp2.0\basic_13.runtimeconfig.dev.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\language_fundamentals\basic_13\bin\Debug\netcoreapp2.0\basic_13.dll
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\language_fundamentals\basic_13\bin\Debug\netcoreapp2.0\basic_13.pdb
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\language_fundamentals\basic_13\obj\Debug\netcoreapp2.0\basic_13.dll
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\language_fundamentals\basic_13\obj\Debug\netcoreapp2.0\basic_13.pdb
