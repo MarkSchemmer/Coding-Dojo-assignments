@@ -80,10 +80,6 @@ namespace deck_of_cards
                  this.memory = new List<Card>();
                  return shuffle(this.resetDeck);
             }
-
-
-
-
     }
 
     public class Player
