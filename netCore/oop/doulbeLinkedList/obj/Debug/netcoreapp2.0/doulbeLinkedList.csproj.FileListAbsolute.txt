@@ -1,0 +1,10 @@
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\oop\doulbeLinkedList\obj\Debug\netcoreapp2.0\doulbeLinkedList.csproj.CoreCompileInputs.cache
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\oop\doulbeLinkedList\obj\Debug\netcoreapp2.0\doulbeLinkedList.AssemblyInfoInputs.cache
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\oop\doulbeLinkedList\obj\Debug\netcoreapp2.0\doulbeLinkedList.AssemblyInfo.cs
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\oop\doulbeLinkedList\bin\Debug\netcoreapp2.0\doulbeLinkedList.deps.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\oop\doulbeLinkedList\bin\Debug\netcoreapp2.0\doulbeLinkedList.runtimeconfig.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\oop\doulbeLinkedList\bin\Debug\netcoreapp2.0\doulbeLinkedList.runtimeconfig.dev.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\oop\doulbeLinkedList\bin\Debug\netcoreapp2.0\doulbeLinkedList.dll
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\oop\doulbeLinkedList\bin\Debug\netcoreapp2.0\doulbeLinkedList.pdb
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\oop\doulbeLinkedList\obj\Debug\netcoreapp2.0\doulbeLinkedList.dll
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\oop\doulbeLinkedList\obj\Debug\netcoreapp2.0\doulbeLinkedList.pdb
