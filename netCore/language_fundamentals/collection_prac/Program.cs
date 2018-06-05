@@ -8,7 +8,7 @@ namespace collection_prac
     {
 
 
-        static rnd = new Random();
+        static Random rnd = new Random();
 
         static void basicArray(){
             var ar1 = Enumerable.Range(1,9).ToArray();
@@ -29,10 +29,10 @@ namespace collection_prac
             var names = new List<string> {"mark", "ruth", "james", "Ze", "jones"};
             var flavors = new List<string> { "choc", "straw", "blue", "purple", "pink"};
             var dic = new Dictionary<string,string>();
-            names.foreach(x => dic.add(x, flavors[rnd.Next(1,flavors.Count-1)]));
-            dic.foreach(x => System.Console.WriteLine(String.Format("{0} {1}", x.key, x.value)));
+            names.ForEach(x => dic.Add(x, flavors[rnd.Next(1,flavors.Count-1)]));
+            foreach(var item in dic)
+                System.Console.WriteLine(String.Format("{0} {1}", item.Key, item.Value));
         }
-
 
 
         static void Main(string[] args)

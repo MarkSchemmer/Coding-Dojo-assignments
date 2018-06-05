@@ -6,11 +6,11 @@ namespace puzzles
 {
     class Program
     {
-        static rnd = new Random();
+        static Random rnd = new Random();
 
         static int[] randArray() => Enumerable.Range(0,10).Select(x => rnd.Next(5,26)).ToArray();
 
-        static string CoinFlip() => rnd.Next(0,2) == 0 ? 'Heads': 'Tails';
+        static string CoinFlip() => rnd.Next(0,2) == 0 ? "Heads": "Tails";
 
         static string[] names()
         {
