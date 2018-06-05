@@ -90,6 +90,25 @@ namespace doulbeLinkedList
            return false; 
        }
 
+
+       public bool nth(int get, out T getter)
+       {
+           var end = this.Tail;
+           var counter = 0;
+           while(end!=null)
+           {
+               if(get == counter){
+                   getter = end.value;
+                   return true;
+               }
+               counter++;
+               end = end.Prev;
+           }
+           getter = default(T);
+           return false;
+       }
+
+
        public void Clear()
        {
            this.Head = null;
