@@ -1,0 +1,10 @@
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\oop\phone\bin\Debug\netcoreapp2.0\phone.deps.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\oop\phone\bin\Debug\netcoreapp2.0\phone.runtimeconfig.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\oop\phone\bin\Debug\netcoreapp2.0\phone.runtimeconfig.dev.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\oop\phone\bin\Debug\netcoreapp2.0\phone.dll
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\oop\phone\bin\Debug\netcoreapp2.0\phone.pdb
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\oop\phone\obj\Debug\netcoreapp2.0\phone.csproj.CoreCompileInputs.cache
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\oop\phone\obj\Debug\netcoreapp2.0\phone.AssemblyInfoInputs.cache
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\oop\phone\obj\Debug\netcoreapp2.0\phone.AssemblyInfo.cs
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\oop\phone\obj\Debug\netcoreapp2.0\phone.dll
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\oop\phone\obj\Debug\netcoreapp2.0\phone.pdb
