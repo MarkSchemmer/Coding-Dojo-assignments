@@ -1,0 +1,10 @@
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\porfollio_2\bin\Debug\netcoreapp2.0\porfollio_2.deps.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\porfollio_2\bin\Debug\netcoreapp2.0\porfollio_2.runtimeconfig.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\porfollio_2\bin\Debug\netcoreapp2.0\porfollio_2.runtimeconfig.dev.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\porfollio_2\bin\Debug\netcoreapp2.0\porfollio_2.dll
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\porfollio_2\bin\Debug\netcoreapp2.0\porfollio_2.pdb
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\porfollio_2\obj\Debug\netcoreapp2.0\porfollio_2.csproj.CoreCompileInputs.cache
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\porfollio_2\obj\Debug\netcoreapp2.0\porfollio_2.AssemblyInfoInputs.cache
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\porfollio_2\obj\Debug\netcoreapp2.0\porfollio_2.AssemblyInfo.cs
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\porfollio_2\obj\Debug\netcoreapp2.0\porfollio_2.dll
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\porfollio_2\obj\Debug\netcoreapp2.0\porfollio_2.pdb
