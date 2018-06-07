@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="time">
+    @{
+        var currentTime = DateTime.Now.ToString("MMMM dd, yyyy H:mm tt");
+
+        <p>@currentTime</p>
+    }
+
+
+</div>

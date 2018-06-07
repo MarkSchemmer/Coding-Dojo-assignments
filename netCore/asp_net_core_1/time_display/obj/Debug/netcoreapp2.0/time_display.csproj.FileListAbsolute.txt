@@ -1,0 +1,10 @@
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\time_display\bin\Debug\netcoreapp2.0\time_display.deps.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\time_display\bin\Debug\netcoreapp2.0\time_display.runtimeconfig.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\time_display\bin\Debug\netcoreapp2.0\time_display.runtimeconfig.dev.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\time_display\bin\Debug\netcoreapp2.0\time_display.dll
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\time_display\bin\Debug\netcoreapp2.0\time_display.pdb
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\time_display\obj\Debug\netcoreapp2.0\time_display.csproj.CoreCompileInputs.cache
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\time_display\obj\Debug\netcoreapp2.0\time_display.AssemblyInfoInputs.cache
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\time_display\obj\Debug\netcoreapp2.0\time_display.AssemblyInfo.cs
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\time_display\obj\Debug\netcoreapp2.0\time_display.dll
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\time_display\obj\Debug\netcoreapp2.0\time_display.pdb
