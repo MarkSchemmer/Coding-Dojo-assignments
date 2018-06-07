@@ -1,0 +1,12 @@
+﻿@model List<int>
+
+@{
+    ViewData["Title"] = "About";
+}
+
+<h3>Here are some numbers</h3>
+
+
+@foreach(var number in @Model){
+    <p>@number</p>
+}

@@ -1,0 +1,10 @@
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\view_model_fun\bin\Debug\netcoreapp2.0\view_model_fun.deps.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\view_model_fun\bin\Debug\netcoreapp2.0\view_model_fun.runtimeconfig.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\view_model_fun\bin\Debug\netcoreapp2.0\view_model_fun.runtimeconfig.dev.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\view_model_fun\bin\Debug\netcoreapp2.0\view_model_fun.dll
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\view_model_fun\bin\Debug\netcoreapp2.0\view_model_fun.pdb
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\view_model_fun\obj\Debug\netcoreapp2.0\view_model_fun.csproj.CoreCompileInputs.cache
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\view_model_fun\obj\Debug\netcoreapp2.0\view_model_fun.AssemblyInfoInputs.cache
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\view_model_fun\obj\Debug\netcoreapp2.0\view_model_fun.AssemblyInfo.cs
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\view_model_fun\obj\Debug\netcoreapp2.0\view_model_fun.dll
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\view_model_fun\obj\Debug\netcoreapp2.0\view_model_fun.pdb
