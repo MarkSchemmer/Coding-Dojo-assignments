@@ -1,0 +1,42 @@
+﻿@model Ninja
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="f">
+
+
+<form asp-action="form" asp-controller="Home" method="POST">
+
+
+    <span asp-validation-for="Name"></span>
+
+  <div class="form-group">
+    <label asp-for="Name">Name</label>
+    <input class="form-control" asp-for="Name">
+  </div>
+
+    <div class="form-group col-md-4">
+      <label asp-for="Location">Location</label>
+      <select asp-for="Location" class="form-control">
+                <option value="seattle" selected>Seattle</option>
+                <option value="sanjose">San Jose</option>
+      </select>
+    </div>
+
+    <div class="form-group col-md-4">
+      <label asp-for="Language">Language</label>
+      <select asp-for="Language" class="form-control">
+                <option value="python" selected>Python</option>
+                <option value="js">JavaScript</option>
+      </select>
+    </div>
+
+
+  <div  class="com form-group">
+      <div> <span asp-validation-for="Comment"></span> </div>
+    <label asp-for="Comment">Comment</label>
+    <textarea class="form-control" asp-for="Comment" rows="3"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
