@@ -1,0 +1,10 @@
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\random_passcode\bin\Debug\netcoreapp2.0\random_passcode.deps.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\random_passcode\bin\Debug\netcoreapp2.0\random_passcode.runtimeconfig.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\random_passcode\bin\Debug\netcoreapp2.0\random_passcode.runtimeconfig.dev.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\random_passcode\bin\Debug\netcoreapp2.0\random_passcode.dll
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\random_passcode\bin\Debug\netcoreapp2.0\random_passcode.pdb
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\random_passcode\obj\Debug\netcoreapp2.0\random_passcode.csproj.CoreCompileInputs.cache
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\random_passcode\obj\Debug\netcoreapp2.0\random_passcode.AssemblyInfoInputs.cache
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\random_passcode\obj\Debug\netcoreapp2.0\random_passcode.AssemblyInfo.cs
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\random_passcode\obj\Debug\netcoreapp2.0\random_passcode.dll
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\random_passcode\obj\Debug\netcoreapp2.0\random_passcode.pdb
