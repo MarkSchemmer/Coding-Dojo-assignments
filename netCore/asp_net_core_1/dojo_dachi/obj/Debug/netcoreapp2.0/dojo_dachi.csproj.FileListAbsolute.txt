@@ -1,0 +1,10 @@
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\dojo_dachi\bin\Debug\netcoreapp2.0\dojo_dachi.deps.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\dojo_dachi\bin\Debug\netcoreapp2.0\dojo_dachi.runtimeconfig.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\dojo_dachi\bin\Debug\netcoreapp2.0\dojo_dachi.runtimeconfig.dev.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\dojo_dachi\bin\Debug\netcoreapp2.0\dojo_dachi.dll
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\dojo_dachi\bin\Debug\netcoreapp2.0\dojo_dachi.pdb
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\dojo_dachi\obj\Debug\netcoreapp2.0\dojo_dachi.csproj.CoreCompileInputs.cache
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\dojo_dachi\obj\Debug\netcoreapp2.0\dojo_dachi.AssemblyInfoInputs.cache
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\dojo_dachi\obj\Debug\netcoreapp2.0\dojo_dachi.AssemblyInfo.cs
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\dojo_dachi\obj\Debug\netcoreapp2.0\dojo_dachi.dll
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\asp_net_core_1\dojo_dachi\obj\Debug\netcoreapp2.0\dojo_dachi.pdb

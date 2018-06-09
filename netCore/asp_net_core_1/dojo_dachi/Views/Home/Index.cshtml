@@ -1,0 +1,21 @@
+﻿@model Pet
+
+<div class="display card text-center">
+    <div id="pet-scores" class="card-header">
+       <span class="full">Fullness @Model.fullness</span>
+       <span class="happiness">Happiness @Model.happiness</span>
+       <span class="meals">Meals @Model.meals</span>
+       <span class="energy">Energy @Model.energy</span>
+    </div>
+    <div class="card-body">
+        <img id="berz" src="~/images/berz.jpg">
+      <p class="card-text"></p>
+    </div>
+    <div class="card-footer text-muted">
+        <button class="btn btn-primary a" id="feed">Feed</button>
+        <button class="btn btn-primary a" id="play">Play</button>
+        <button class="btn btn-primary a" id="work">Work</button>
+        <button class="btn btn-primary a" id="sleep">Sleep</button>
+    </div>
+  </div>
+
