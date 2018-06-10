@@ -1,0 +1,10 @@
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\Linq\music-linq\bin\Debug\netcoreapp1.1\LinqSkeleton.deps.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\Linq\music-linq\bin\Debug\netcoreapp1.1\LinqSkeleton.runtimeconfig.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\Linq\music-linq\bin\Debug\netcoreapp1.1\LinqSkeleton.runtimeconfig.dev.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\Linq\music-linq\bin\Debug\netcoreapp1.1\LinqSkeleton.dll
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\Linq\music-linq\bin\Debug\netcoreapp1.1\LinqSkeleton.pdb
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\Linq\music-linq\obj\Debug\netcoreapp1.1\LinqSkeleton.csproj.CoreCompileInputs.cache
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\Linq\music-linq\obj\Debug\netcoreapp1.1\LinqSkeleton.AssemblyInfoInputs.cache
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\Linq\music-linq\obj\Debug\netcoreapp1.1\LinqSkeleton.AssemblyInfo.cs
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\Linq\music-linq\obj\Debug\netcoreapp1.1\LinqSkeleton.dll
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\Linq\music-linq\obj\Debug\netcoreapp1.1\LinqSkeleton.pdb
