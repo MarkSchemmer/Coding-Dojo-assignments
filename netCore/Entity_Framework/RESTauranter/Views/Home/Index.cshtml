@@ -1,0 +1,42 @@
+﻿@model Review
+<div class="form-rev">
+    <form asp-action="create" asp-controller="Home" method="POST">  
+        
+        <div class="form-group">
+          <label asp-for="ReviewerName">Reviewer Name</label>
+          <input class="form-control" placeholder="Name" asp-for="ReviewerName">
+        </div>
+
+        <div class="form-group">
+          <label asp-for="ResturantName">Resturant Name</label>
+          <input class="form-control" placeholder="Resturant Name" asp-for="ResturantName">
+        </div>
+   
+    
+        <div class="form-group">
+          <label asp-for="_Review">Review</label>
+          <textarea class="form-control" asp-for="_Review" rows="3"></textarea>
+        </div>
+
+
+    <div class="rate form-group">
+            <label asp-for="Rating">Rating</label>
+            <select class="form-control" asp-for="Rating">
+              <option selected value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+    </div>
+
+    <div class="form-group">
+        <div><label asp-for="visit">When visited</label></div>
+            <input asp-for="visit">
+    </div>
+
+  
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>

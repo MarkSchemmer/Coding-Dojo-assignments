@@ -1,0 +1,10 @@
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\Entity_Framework\RESTauranter\bin\Debug\netcoreapp2.0\RESTauranter.deps.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\Entity_Framework\RESTauranter\bin\Debug\netcoreapp2.0\RESTauranter.runtimeconfig.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\Entity_Framework\RESTauranter\bin\Debug\netcoreapp2.0\RESTauranter.runtimeconfig.dev.json
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\Entity_Framework\RESTauranter\bin\Debug\netcoreapp2.0\RESTauranter.dll
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\Entity_Framework\RESTauranter\bin\Debug\netcoreapp2.0\RESTauranter.pdb
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\Entity_Framework\RESTauranter\obj\Debug\netcoreapp2.0\RESTauranter.csproj.CoreCompileInputs.cache
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\Entity_Framework\RESTauranter\obj\Debug\netcoreapp2.0\RESTauranter.AssemblyInfoInputs.cache
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\Entity_Framework\RESTauranter\obj\Debug\netcoreapp2.0\RESTauranter.AssemblyInfo.cs
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\Entity_Framework\RESTauranter\obj\Debug\netcoreapp2.0\RESTauranter.dll
+D:\My_Files\courses\coding-dojo-homework\Coding-Dojo-assignments\netCore\Entity_Framework\RESTauranter\obj\Debug\netcoreapp2.0\RESTauranter.pdb

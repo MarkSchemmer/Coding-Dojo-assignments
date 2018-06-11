@@ -1,0 +1,14 @@
+﻿@model List<Review>
+
+
+    @foreach(var item in @Model){
+       <div class="card">
+            <h5 class="card-header">
+                Review for: @item.ResturantName  @item.Rating stars
+            </h5>
+            <div class="card-body">
+              <h5 class="card-title"> @item.ReviewerName </h5>
+              <p class="card-text"> @item._Review </p>
+            </div>
+    </div>
+    }
