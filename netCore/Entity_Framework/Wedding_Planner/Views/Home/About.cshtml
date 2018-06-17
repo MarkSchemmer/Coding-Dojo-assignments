@@ -1,0 +1,59 @@
+﻿@model User
+
+<h2>Hello @Model.FirstName</h2>
+<hr>
+<div class="info">
+    <table class="table table-striped">
+            <thead>
+            <tr>
+                <th scope="col">Wedding</th>
+                <th scope="col">Date</th>
+                <th scope="col">Guest</th>
+                <th scope="col">Action</th>
+            </tr>
+            </thead>
+            <tbody>
+        @foreach(var wedd in ViewBag.weddings){
+            <tr>
+
+                @{
+                    var count = wedd.guests.Count;
+
+                    var UsersWedding = Model.UserId == wedd.UserId;
+
+                    var reserved = wedd.Contains(Model);
+                }
+
+                <th scope="row">
+                 <a id="" asp-controller="Home" 
+                 asp-action="wedInfo" 
+                 asp-route-wedd="@wedd.WeddingId">
+                     @wedd.WedderOneName & @wedd.WedderTwoName</a>
+                </th>
+                <td>@wedd.DisplayDate</td>
+                <td>@count</td>
+                @if(UsersWedding){
+                    <td><a asp-controller="Home" asp-action="Delete">delete</a></td>
+                } else if (reserved){
+                    <td><a asp-controller="Home" 
+                        asp-action="unrsvp" 
+                        asp-route-wedd="@wedd.WeddingId">UN-RSVP</a></td>
+                } else {
+                    <td><a asp-controller="Home" 
+                        asp-action="rsvp" 
+                        asp-route-wedd="@wedd.WeddingId">RSVP</a></td>
+                }
+               
+                
+            </tr>
+        }
+            </tbody>
+        </table>
+        <br>
+
+        @if(Model.HasMadeWedding==false){ 
+        <a asp-controller="Home" 
+        asp-action="Plan"  
+        class="btn btn-info">New Wedding</a> }
+</div>
+<hr>

@@ -1,0 +1,45 @@
+@model Wedding
+
+
+<h2>Plan Your wedding</h2>
+
+<div class="form">
+
+        <form id="reg_form" asp-action="CreateWedding" asp-controller="Home" method="POST">
+
+                <span class="reg-errors" asp-validation-for="WedderOneName"></span>
+
+                    <div class="form-group">
+                            <label asp-for="WedderOneName">Wedder One Name</label>
+                            <input class="form-control" asp-for="WedderOneName">
+                    </div>
+
+                    <span class="reg-errors" asp-validation-for="WedderTwoName"></span>
+
+                    <div class="form-group">
+                            <label asp-for="WedderTwoName">Wedder Two Name</label>
+                            <input class="form-control" asp-for="WedderTwoName">
+                    </div>
+
+
+                    <span class="reg-errors" asp-validation-for="StringDate"></span>
+                    @if(ViewBag.futDate==true){ <br> <span class="reg-errors">Date Must be in the future</span> }
+                    
+                    <div class="form-group">
+                            <label asp-for="StringDate">Please Enter date ex: MM-DD-YYYY</label>
+                            <input class="form-control" placeholder=" example: 01-21-1995" asp-for="StringDate">
+                    </div>
+
+                    <span class="reg-errors" asp-validation-for="address"></span>
+       
+                    <div class="form-group">
+                        <small>Please include street address and State such as ID = Idaho or CA = California ect</small>
+                            <label asp-for="address">address</label>
+                            <input class="form-control" asp-for="address">
+                    </div>
+
+                    <button type="submit" class="btn btn-info">Create</button>
+           
+            </form>
+</div>
+
