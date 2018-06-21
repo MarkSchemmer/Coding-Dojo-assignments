@@ -34,7 +34,8 @@ namespace login_registration.Controllers
             if(dup)
                 ViewBag.DuplicateEmail = true;
             
-            if(ModelState.IsValid && psconf == user.Password && !dup){
+            if(ModelState.IsValid && psconf == user.Password && !dup)
+            {
                 PasswordHasher<User> Hasher = new PasswordHasher<User>();
                 user.Password = Hasher.HashPassword(user, user.Password);
                 _context.users.Add(user);
@@ -108,7 +109,6 @@ namespace login_registration.Controllers
                 ViewBag.auth = true;
                 ViewBag.plan = true;
                 ViewBag.user = user;
-              //  Wedding wedding = new Wedding();
                 return View("Plan");
             }
             else
@@ -123,8 +123,6 @@ namespace login_registration.Controllers
             
             int? User_Id = HttpContext.Session.GetInt32("User_Id");
             var user = _context.GetUserById(User_Id);
-            System.Console.WriteLine(wedding.StringDate);
-            System.Console.WriteLine(DateTime.Now);
             wedding.date = DateTime.ParseExact(wedding.StringDate, "MM-dd-yyyy", CultureInfo.InvariantCulture);
             wedding.DisplayDate = String.Format("{0:dddd, MMMM d, yyyy}", wedding.date);
             bool correctDate = wedding.date > DateTime.Now;
@@ -152,7 +150,6 @@ namespace login_registration.Controllers
         public IActionResult Delete()
         {
             var user = _context.GetUserById(HttpContext.Session.GetInt32("User_Id"));
-            System.Console.WriteLine(user.FirstName);
             user.HasMadeWedding = false;
             var usersWedding = user.MyWedding;
             _context.weddings.Remove(usersWedding);

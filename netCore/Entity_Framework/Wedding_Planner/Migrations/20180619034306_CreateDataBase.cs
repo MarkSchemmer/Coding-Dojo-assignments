@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace login_registration.Migrations
 {
-    public partial class CreateDb : Migration
+    public partial class CreateDataBase : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

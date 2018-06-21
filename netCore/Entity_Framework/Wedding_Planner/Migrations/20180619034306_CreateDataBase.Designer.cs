@@ -11,8 +11,8 @@ using System;
 namespace login_registration.Migrations
 {
     [DbContext(typeof(UserContext))]
-    [Migration("20180616020254_CreateDb")]
-    partial class CreateDb
+    [Migration("20180619034306_CreateDataBase")]
+    partial class CreateDataBase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

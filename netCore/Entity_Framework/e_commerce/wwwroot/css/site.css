@@ -1,0 +1,131 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 260px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+ /*   background-color: #111; */
+    overflow-x: hidden;
+    padding-top: 20px;
+    margin-top:70px;
+    display: block;
+    margin-left:20px;
+}
+
+
+.sidenav button {
+    margin-top:20px;
+}
+
+
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    margin-left: 200px;
+}
+
+
+.sidebar{
+    display: inline-block;
+}
+
+
+div.info{
+    display:inline-block;
+}
+
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+.image{
+    width: 100px;
+    height: 100px;
+}
+
+
+
+.info .card{
+    padding:10px;
+    margin:10px;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.info .card img{
+    width: 200px;
+    height: 200px;
+}
+
+.cust-card{
+    padding:25px;
+    margin-top:100px;
+    width:750px;
+} 
+
+ .customer-display{
+    margin-top: 50px;
+}
+
+.cust-search{
+    float:right;
+}
+
+
+.navbar-brand{
+ padding-top: 12px !important;
+}
+
+

@@ -1,0 +1,84 @@
+@model Order
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous"> 
+
+
+@{
+    var quantity = Enumerable.Range(1,10).ToList();
+}
+
+
+<div class="cust-card card order-card">
+    <h5 class="card-header">Make a new Order</h5>
+    <div class="card-body">
+        @if(ViewBag.duplicateCustomer != null){
+            <div class="alert alert-danger">
+                <p>Quantity is too high</p>
+            </div>
+        }
+        <form asp-action="MakeOrder" asp-controller="Home" method="POST">
+            <div class="form-group">
+                    <label asp-for="CustomerId" >Customer</label>
+                    <select class="form-control" asp-for="CustomerId">
+                            @foreach(var cust in ViewBag.customers){
+                                <option value="@cust.CustomerId">@cust.Name</option>
+                            }
+                    </select> 
+            </div>
+            <div class="form-row">
+                    <div class="form-group col-md-6">
+                            <select class="form-control" asp-for="AmountOrdered" >
+                                    @foreach(var amount in quantity ){
+                                        <option value="@amount">@amount</option>
+                                    }
+                            </select> 
+                    </div>
+
+                    <div class="form-group col-md-6">
+                            <select class="form-control" asp-for="ProductId" >
+                                    @foreach(var prod in ViewBag.products){
+                                        <option value="@prod.ProductId">@prod.Name</option>
+                                    }
+                            </select> 
+                    </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary my-btn">Order</button>
+        </form>
+
+    </div>
+  </div>
+
+  <div class="customer-display">
+        <div class="cust-search form-group form-inline">
+            <form asp-action="OrderSearch"  asp-controller="Home" method="POST" class="form-inline">
+                <input class="form-control" type="text" name="item" placeholder="Search name...">
+                <button type="submit" class="btn btn-primary">Filter</button>
+            </form>
+        </div>
+    
+           <div class="table">
+            <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">Customer Name</th>
+                    <th scope="col">Product</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+    
+            @foreach(var order in ViewBag.orders){
+                  <tr>
+                    <th scope="row">@order.customer.Name</th>
+                    <td>@order.product.Name</td>
+                    <td>@order.AmountOrdered</td>
+                    <td>@order.DisplayDate</td>
+                  </tr>
+    
+                }
+                </tbody>
+              </table>
+           </div>
+    
+      </div>

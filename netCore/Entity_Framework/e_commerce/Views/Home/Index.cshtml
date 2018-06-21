@@ -1,0 +1,39 @@
+﻿<div class="sidebar">
+<div class="sidenav">
+    <form class="form-inline">
+        <i class="glyphicon glyphicon-search" aria-hidden="true"></i>
+        <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search">
+        <button type="submit" class="btn btn-primary">Filter</button>
+    </form>
+</div>
+</div>
+
+<div class="main">
+        <div class="info">
+            <h3>Welcome the product page</h3>  
+                @foreach(var product in ViewBag.products){
+                    <div class="card">
+                        <img class="card-img-top" src="@product.ImageUrl" alt="Card image">
+                        <div class="card-body">
+                          <h3 class="card-title">@product.Name</h3>
+                          <p>(@product.InitialQuantity Left)</p>
+                          <a href="#" class="btn btn-primary">Make Purchase</a>
+                        </div>
+                      </div>
+                }
+            </div>
+            <div class="recent-orders">
+                <h3>Recent Orders</h3>
+                @foreach(var order in ViewBag.orders){
+
+                    var hours = DateTime.Now - @order.OrderedAt;
+                    <p>@order.customer.Name purchased @order.AmountOrdered @order.product.Name... (@hours)</p>
+                }
+            </div>
+
+
+            <div class="new-customers">
+
+            </div>
+    </div>
+

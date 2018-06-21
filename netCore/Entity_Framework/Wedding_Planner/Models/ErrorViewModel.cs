@@ -6,15 +6,11 @@ using System.ComponentModel.DataAnnotations;
 using System.Globalization;
 
 /*
-
         dotnet ef database update
 
         dotnet ef migrations add -name 
 
-
         commands for migrating and updating database!
-
-
  */
 
 namespace login_registration.Models

@@ -30,7 +30,7 @@
       var geocoder = new google.maps.Geocoder()
         var address = '@Model.address'
         geocoder.geocode({'address':address},
-            function(results, status){
+        function(results, status){
            
 
                     map.setCenter(results[0].geometry.location)
