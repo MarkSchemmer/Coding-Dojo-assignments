@@ -1,0 +1,23 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<style>
+  li{
+    list-style-type: none;
+  }
+</style>
+
+<div style="text-align:center">
+  <h1>RestFul Tasks API</h1>
+
+    <div class="allTasks">
+      <h1>All Tasks</h1>
+      <ul *ngFor="let ob of obj">
+        <li>{{ ob.title }}</li>
+      </ul>
+    </div>
+
+    <div class="third">
+      <h1>Third Task</h1>
+      <h3>{{obj[2].title}}</h3>
+    </div>
+
