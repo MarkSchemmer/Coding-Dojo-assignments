@@ -1,0 +1,3 @@
+Backtracking 
+choose unchoose and exploring...
+break letters up into a chosen and available column

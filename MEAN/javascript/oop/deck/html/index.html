@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        img{
+            height: 150px;
+            width: 150px;
+        }
+    </style>
+    <script src="../js/deck.js"></script>
+
+</head>
+<body>
+    <h1>Go Fish!</h1>
+    <!-- <img src="../images/d4.png" alt="card"> -->
+
+    <div id="cards">
+
+    </div>
+
+    <script>
+            var s = ''    
+            d.deck.forEach(x => {
+                s += '<img src="'+x.ImgPath+'" alt="card">' + '\n'
+            })
+            console.log(s)
+            var div = document.getElementById('cards')
+            console.log(div)
+            div.insertAdjacentHTML('beforeend', s)
+        </script>
+</body>
+</html>

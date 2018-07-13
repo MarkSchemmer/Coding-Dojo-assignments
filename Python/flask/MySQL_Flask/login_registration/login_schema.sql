@@ -32,3 +32,18 @@ SELECT * FROM users;
 
 SELECT * FROM users 
 WHERE email = 'mjs.schemmer@gmail.com';
+
+
+-- b'$2b$12$736rD74B.p8iolLrr/n3eOX1Z//bNQ71s8Lj4udCjjd0obXbo7tTO'
+
+update users SET pass = '$2b$12$736rD74B.p8iolLrr/n3eOX1Z//bNQ71s8Lj4udCjjd0obXbo7tTO' WHERE email = 'mjs.schemmer@gmail.com';
+
+
+
+DELETE FROM users WHERE first_name = 'zim';
+
+
+DROP DATABASE cw_db;
+
+	CREATE DATABASE django_app;
+    USE django_app;

@@ -12,25 +12,27 @@
             </div>
             <div class="modal-body">
                     <form id="reg_form" asp-action="reg" asp-controller="Home" method="POST">
-                   
+                            <span class="reg-errors" asp-validation-for="FirstName"></span>
                             <div class="form-group">
                                     <label asp-for="FirstName">First Name</label>
                                     <input class="form-control" asp-for="FirstName">
                             </div>
+                            <span class="reg-errors" asp-validation-for="LastName"></span>
                             <div class="form-group">
                                     <label asp-for="LastName">Last Name</label>
                                     <input class="form-control" asp-for="LastName">
                             </div>
-               
+                            <span class="reg-errors" asp-validation-for="Email"></span>
                             <div class="form-group">
                                     <label asp-for="Email">Email</label>
                                     <input class="form-control" asp-for="Email">
                             </div>
-                   
+                            <span class="reg-errors" asp-validation-for="Password"></span>
                             <div class="form-group">
                                     <label asp-for="Password">Password</label>
                                     <input asp-for="Password" class="form-control">
                             </div>
+                            @if(ViewBag.psconf==true){<span class="reg-errors">Confirmation password must match Password</span>}
                             <div class="form-group">
                                     <label for="psconf">Confirm Password</label>
                                     <input type="password" class="form-control" name="psconf">
@@ -56,9 +58,15 @@
   
     <div class="card">
       <div class="card-header">
-        Login
+        <h2>Login</h2>
       </div>
       <div class="f card-body">
+             @if(ViewBag.login_error==true)
+             { 
+                <div class="alert alert-danger">
+                      <p>Login Error</p>
+                </div>
+             }
                   <form asp-action="login" asp-controller="Home" method="POST">
        
                           <div class="form-group">

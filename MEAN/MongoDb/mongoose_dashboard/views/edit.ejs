@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>form for Editing a Elephant</h1>
+
+    <form action="/elephants/<%= elephant._id %>" method="post">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" name="name" value="<%= elephant.name %>">
+            </div>
+            <div>
+                <label for="color">Favorite Color</label>
+                <input type="text" name="color" value="<%= elephant.favColor %>">
+            </div>
+
+            <div>
+                <label for="desc">Description</label>
+                <textarea name="desc" cols="30" rows="10">
+                    <%= elephant.desc %>
+                </textarea>
+            </div>
+
+            <button>Update Elephant</button>
+
+
+    </form>
+    <a href="/">Back Home</a>
+</body>
+</html>

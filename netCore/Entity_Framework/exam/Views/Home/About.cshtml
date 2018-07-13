@@ -1,0 +1,81 @@
+﻿@model User
+
+<h3>Welcome @Model.FirstName</h3>
+<hr>
+
+<div class="info">
+        <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th scope="col">Activity</th>
+                    <th scope="col">Date and Time</th>
+                    <th scope="col">Duration</th>
+                    <th scope="col">Event Coordinator</th>
+                    <th scope="col">Number of Participants</th>
+                    <th scope="col">Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                    @foreach(var a in ViewBag.acts){
+                        <tr>
+
+                                @{
+                                    var count = a.participants.Count;
+                                    var going = a.GoingToEvent(Model, a);
+                                    var canDelete = Model.CanDelete(a);
+                                }
+
+
+                            <td>
+                                <a href="ViewAct/@a._ActivityId">@a.Title</a>
+                         
+                            </td>
+                            <td>@a.Date.ToString("MM-dd-yyyy") @@ @a.Time.ToString("hh:mm tt")</td>
+                            <td>@a.Duration @a.DurationFormat</td>
+                            <td>@a.creator.FirstName</td>
+                            <td>@a.participantsCount(a)</td>
+                            <td>
+                                    @if(going)
+                                    {
+                                        <div class="join">
+                                                <form asp-action="LeaveActStay" asp-controller="Home" method="POST">
+                                                    <input type="hidden" value="@Model.UserId" name="user">
+                                                    <input type="hidden" value="@a._ActivityId" name="activity">
+                                                    <button class="btn btn-primary">Leave</button>
+                                                </form>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="join">
+                                                <form asp-action="JoinActStay" asp-controller="Home" method="POST">
+                                                    <input type="hidden" value="@Model.UserId" name="user">
+                                                    <input type="hidden" value="@a._ActivityId" name="activity">
+                                                    <button class="btn btn-primary">Join</button>
+                                                </form>
+                                        </div>
+                                    }
+
+                                    @if(canDelete){
+                                        <div class="join">
+                                                <form asp-action="DeleteAct" asp-controller="Home" method="POST">
+                                                    <input type="hidden" value="@Model.UserId" name="user">
+                                                    <input type="hidden" value="@a._ActivityId" name="activity">
+                                                    <button class="btn btn-danger">Delete</button>
+                                                </form>
+                                        </div>
+                                    }
+                            </td>
+                        </tr>
+                    }
+
+   
+                </tbody>
+            </table>
+            <br>
+    
+
+            <a asp-controller="Home" 
+            asp-action="AddActivity"  
+            class="btn btn-info">Add New Activity</a> 
+    </div>

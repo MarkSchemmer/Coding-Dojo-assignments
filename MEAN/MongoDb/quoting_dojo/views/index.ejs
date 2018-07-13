@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <style>
+        
+    </style>
+
+</head>
+
+
+<body>
+
+    <h1>Welcome to the Quoting Dojo</h1>
+<!-- based on the structure of your messages, determine how to display them -->
+    
+    <% if(messages.registration) { %>
+        <% for (var x of messages.registration) { %>
+            <h3><%= x %></h3>
+        <% } %>
+    <% } %>
+
+    <form action="/addQuote" method="POST">
+        <div>
+            <label for="name">Your name</label>
+            <input type="text" name="name">
+        </div>
+        <div>
+            <label for="quote">Your Quote</label>
+            <textarea name="quote" id="" cols="30" rows="10"></textarea>
+        </div>
+        <button type="submit">Add my Quote</button>
+        <a href="/quotes">Skip to quotes</a>
+    </form>
+</body>
+</html>

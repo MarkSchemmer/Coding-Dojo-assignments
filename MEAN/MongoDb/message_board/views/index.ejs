@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+
+<body>
+
+    <h1>Welcome to Message board</h1>
+
+    <div class="msg">
+        <form action="/createMsg" method="POST">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name">
+            </div>
+            <div>
+                <label for="mes">Message</label> <br>
+                <textarea name="mes"cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit">Post Message</button>
+        </form>
+    </div>
+
+    <hr>
+
+    <div class="msg">
+        <% for (let m of messages) { %>
+            <div class="info">
+                    <%= m.name %>
+                    <%= m.message %>
+                    <% if(m.Comments) { %>
+                        <% for (let c of m.Comments) { %>
+                            <h6><%= c.name %></h6>
+                            <h5><%= c.comment %></h5>
+                        <% } %>
+                    <% } %>
+
+                    <br>
+                    <form action="/createComment/<%= m._id %>" method="POST">
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" name="name">
+                        </div>
+                        <div>
+                            <label for="comment">Comment</label> <br>
+                            <textarea name="comment" cols="30" rows="10"></textarea>
+                        </div>
+                        <button type="submit">Create Comment</button>
+                    </form>
+            </div>
+             <br>
+        <% } %>
+    </div>
+
+</body>
+</html>

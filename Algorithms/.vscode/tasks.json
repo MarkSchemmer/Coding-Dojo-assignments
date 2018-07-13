@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/6-4-2018/sigma_c#/sigma_c#.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

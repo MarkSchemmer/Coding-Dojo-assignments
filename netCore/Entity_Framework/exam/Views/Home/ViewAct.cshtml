@@ -1,0 +1,43 @@
+@model _Activity
+
+
+@{
+   var going = Model.GoingToEvent(ViewBag.CurUser, Model);
+} 
+
+<h2>@Model.Title</h2>
+@if(going)
+{
+    <div class="join">
+            <form asp-action="LeaveAct" asp-controller="Home" method="POST">
+                <input type="hidden" value="@ViewBag.CurUser.UserId" name="user">
+                <input type="hidden" value="@Model._ActivityId" name="activity">
+                <button class="btn btn-primary">Leave</button>
+            </form>
+    </div>
+}
+else
+{
+    <div class="join">
+            <form asp-action="JoinAct" asp-controller="Home" method="POST">
+                <input type="hidden" value="@ViewBag.CurUser.UserId" name="user">
+                <input type="hidden" value="@Model._ActivityId" name="activity">
+                <button class="btn btn-primary">Join</button>
+            </form>
+    </div>
+}
+<h3>Event Coordinator: @Model.creator.FirstName</h3>
+
+<div class="desc">
+    <h3>Desciption</h3>
+    <p>@Model.Description</p>
+</div> 
+
+
+
+<h3>Participants</h3>
+
+@foreach(var goer in Model.participants){
+    <p>@goer.user.FirstName</p>
+}
+

@@ -1,0 +1,197 @@
+﻿
+
+<!-- 
+
+
+    Map center and zoom level
+
+
+    There are 4 types of map constants that I can have for the map such as 
+
+
+    RoadMap -> shows roads really well
+
+    Satalite -> which shows the forest 
+
+    Hybrid -> is a mix of RoadMap and Satalite
+
+    Terrain -> which well shows the terrain!
+
+ -->
+
+
+ <!-- 
+
+
+    on a button click you can change the visual of a map
+
+        function btnClicked (){
+            map.setMapTypeId(google.maps.MapTypeId.HYBRID)
+        }
+
+        How to add data to the maps...
+
+        create the data ourselves by generating data say for example from the user or from us -> Overlays
+
+        or we can use data that is used from a exterior source... -> Layers
+  -->
+
+
+
+  <!-- 
+     to make a new marker... example below...
+
+
+     var centerMarker = new google.maps.Marker({
+         icon:imageURL,
+         position: new google.maps.LatLng(latitude, longitude),
+         map: mapObject,
+         title: 'string of something to apear above the marker!'
+     })
+   -->
+
+
+   <!-- 
+
+        PolyLines
+
+        var pathCoordinates = [
+            new google..maps.LatLng(lat, lng)
+            .......
+        ]
+
+
+        var pathToCenter = new google.maps.Polyline({
+            path:pathCoordinates,
+            strokeColor:rgb-color,
+            strokeOpacity:clarity of the line,
+            strokeWeight:weight of the line
+        })
+
+        pathToCenter.setMap(mapObject)
+
+    -->
+
+
+    <!-- 
+
+            Polygons -> the difference is that the start and end points are the same...
+
+            var natureCoords = [
+                new google.maps.Latlng(lat, lng)
+                ........
+            ]
+
+            var natureArea = new google.maps.Polygon({
+                path:natureCoords,
+                strokeColor:rgb-color,
+                strokeOpacity:num,,
+                strokeWeight:color-weight,
+                fillColor:'rgb-color-of-area',
+                fillOpacity:0.6
+            })
+
+            natureArea.setMap(mapObject)
+
+
+     -->
+
+
+
+
+         <!-- 
+
+            Circles -> 
+            var circle = new google.maps.Circle({
+                map:map,
+                center: new google.maps.LatLng(lat,lng),
+                fillColor:'rgb-color-of-area',
+                fillOpacity:0.6,
+                strokeColor:rgb-color,
+                strokeOpacity:decimal less than 1,
+                strokeWeight:num,
+            })
+
+            circle.setRadius(numInKilometers)
+
+     -->
+
+
+
+     
+         <!-- 
+
+
+
+        var bounds = new google.maps.LatLngBounds(
+                new google.maps.Latlng(lat, lng), // south wester corner 
+                new google.maps.Latlng(lat, lng) // north eastern corner
+            )
+
+            Rectangles -> 
+            var rectangle = new google.maps.Rectangle({
+                bounds:bounds,
+                map:map,
+                fillColor:'rgb-color-of-area',
+                fillOpacity:0.6,
+                strokeColor:rgb-color,
+                strokeOpacity:decimal less than 1,
+                strokeWeight:num,
+            })
+            
+
+     -->
+
+
+
+
+
+
+
+
+
+<h3>Google maps tutorial</h3>
+
+<button id="btnTerrain">Terrain</button>
+<button id="btnRoadMap">RoadMap</button>
+<button id="btnSat">SatelLite</button>
+<button id="btnHybrid">Hybrid</button>
+
+
+<div id="map"></div>
+
+<script> 
+ function initMap(){
+     var mapOptions = {
+         center : new google.maps.LatLng(0,0),
+         zoom: 3
+     }
+
+     var map = new google.maps.Map(
+         document.getElementById("map"), 
+         mapOptions
+        ) 
+        addButtons(map)  
+ }
+
+ function addButtons(map){
+
+     document.getElementById('btnTerrain').addEventListener('click',function(){
+         map.setMapTypeId(google.maps.MapTypeId.TERRAIN)
+     })
+
+     document.getElementById('btnRoadMap').addEventListener('click',function(){
+         map.setMapTypeId(google.maps.MapTypeId.ROADMAP)
+     })
+
+     document.getElementById('btnSat').addEventListener('click',function(){
+         map.setMapTypeId(google.maps.MapTypeId.SATELLITE)
+     })
+
+     document.getElementById('btnHybrid').addEventListener('click',function(){
+         map.setMapTypeId(google.maps.MapTypeId.HYBRID)
+     })
+
+ }
+google.maps.addDomListener(window, "load", initMap)
+</script>

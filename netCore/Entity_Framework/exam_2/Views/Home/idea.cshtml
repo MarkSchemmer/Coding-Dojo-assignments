@@ -1,0 +1,38 @@
+@model Post
+
+
+<div class="post">
+
+        <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">@Model.creator.Alias Says</h5>
+                  <p class="card-text">@Model.Description</p>
+                </div>
+              </div>
+
+</div>
+
+
+<div class="people">
+    <h3>People who liked this post:</h3>
+    <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Alias</th>
+                <th scope="col">Name</th>
+
+              </tr>
+            </thead>
+            <tbody>
+           
+                @foreach(var like in @Model.Likes){
+                    <tr>
+                    <th scope="row"><a href="../users/@like.user.UserId">@like.user.Alias</a></th>
+                    <td>@like.user.Name</td>
+                </tr>
+                }
+      
+
+            </tbody>
+          </table>
+</div>

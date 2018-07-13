@@ -1,0 +1,45 @@
+﻿@model User
+<h3>HI! @Model.Name</h3>
+
+<style>
+    .card{
+        margin-top:20px;
+        margin-bottom: 20px;
+        border:1px solid silver;
+        padding:25px;
+    }
+</style>
+
+<div class="cont">
+
+
+
+
+<div class="createIdea">
+        <form  asp-action="CreateIdea" asp-controller="Home" method="POST">
+                <div class="form-group">
+                    <textarea placeholder="Create Idea here!..." name="desc" class="form-control" rows="2"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Idea!</button>
+        </form>
+</div>
+
+<div class="posts">
+    @foreach(var post in ViewBag.posts){
+
+        <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title"><a href="../users/@post.creator.UserId">@post.creator.Alias</a> Says</h5>
+                  <p class="card-text">@post.Description</p>
+                  <a href="../like/@Model.UserId/@post.PostId" class="card-link">
+                      Like
+                    </a>
+                  <a href="../idea/@post.PostId" class="card-link">@post.Likes.Count people</a> Like this.
+                </div>
+              </div>
+    }
+</div>
+
+
+</div>
+

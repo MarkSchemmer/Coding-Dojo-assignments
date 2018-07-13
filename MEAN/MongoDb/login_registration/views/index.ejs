@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <h1>Welcome to Login and Registration!</h1>
+    <div class="login">
+        <form action="/login" method="POST">
+            <div>
+                <label for="email">Email</label>
+                <input type="text" name="email">
+            </div>
+
+            <div>
+                <label for="psw">Password</label>
+                <input type="text" name="psw">
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="regis">
+        <form action="/regis" method="POST">
+
+            <% if(err!=null) { %>
+                <% if (err.email) { %>
+                    <%= err.email %>
+                <% } %>
+            <% } %>
+        <div>
+            <label for="email">Email</label>
+            <input type="text" name="email">
+        </div>
+
+        <% if(err!=null) { %>
+            <% if (err.first_name) { %>
+                <%= err.first_name %>
+            <% } %>
+        <% } %>
+
+        <div>
+            <label for="first_name">first_name</label>
+            <input type="text" name="first_name">
+        </div>
+
+        <% if(err!=null) { %>
+            <% if (err.last_name) { %>
+                <%= err.last_name %>
+            <% } %>
+        <% } %>
+
+        <div>
+            <label for="last_name">Last Name</label>
+            <input type="text" name="last_name">
+        </div>
+
+        <% if(err!=null) { %>
+            <% if (err.ps) { %>
+                <%= err.ps %>
+            <% } %>
+        <% } %>
+
+        <div>
+            <label for="psw">Password</label>
+            <input type="text" name="psw">
+        </div>
+
+        <div>
+            <label for="psconf">Confirm-Password</label>
+            <input type="text" name="psconf">
+        </div>
+        <button type="submit">Register</button>
+    </form>
+    </div>
+</body>
+</html>

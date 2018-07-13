@@ -1,0 +1,68 @@
+when creating a mongoose app 
+
+you need to install express, ejs, body-parser, path, mongoose 
+
+
+
+ Use express flash - npm install --save express-flash - to display your errors. In order to use express flash messages, you must have session.
+
+
+var express = require('express');
+// Create an Express App
+var app = express();
+// Require body-parser (to receive post data from clients)
+var bodyParser = require('body-parser');
+// Integrate body-parser with our App
+app.use(bodyParser.urlencoded({ extended: true }));
+// Require path
+var path = require('path');
+// Setting our Static Folder Directory
+app.use(express.static(path.join(__dirname, './static')));
+// Setting our Views Folder Directory
+app.set('views', path.join(__dirname, './views'));
+// Setting our View Engine set to EJS
+app.set('view engine', 'ejs');
+// Routes
+// Root Request
+app.get('/', function(req, res) {
+    // This is where we will retrieve the users from the database and include them in the view page we will be rendering.
+    res.render('index');
+})
+// Add User Request 
+app.post('/users', function(req, res) {
+    console.log("POST DATA", req.body);
+    // This is where we would add the user from req.body to the database.
+    res.redirect('/');
+})
+// Setting our Server to Listen on Port: 8000
+app.listen(8000, function() {
+    console.log("listening on port 8000");
+})
+
+
+
+Bcrypt NPM Installation
+
+npm install --save bcrypt-as-promised
+
+https://www.npmjs.com/package/bcrypt-as-promised
+
+const bcrypt = require('bcrypt-as-promised');
+Hashing
+bcrypt.hash('password_from_form', 10)
+.then(hashed_password => {
+	 
+})
+.catch(error => {
+	 
+});
+Whats the '10'? - That's the saltrounds, the number of times the bcrypt library will generate a more complex hashed password. 10 is a good standard.
+
+Validation
+bcrypt.compare('password_from_form', 'stored_hashed_password')
+.then( result => {
+	 
+})
+.catch( error => {
+	 
+})

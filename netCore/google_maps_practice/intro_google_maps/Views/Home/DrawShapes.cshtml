@@ -1,0 +1,16 @@
+
+<h3>Welcome to JavaScript events as well!</h3>
+
+<div id="map"></div>
+<script>
+    function initMap(){
+        var mapOptions = {
+            center: new google.maps.LatLng(0,0),
+            zoom:3
+        }
+        var element = document.getElementById('map')
+        var map = new google.maps.Map(element, mapOptions)
+    }
+
+google.maps.addDomListener(onload, 'load', initMap)
+</script>

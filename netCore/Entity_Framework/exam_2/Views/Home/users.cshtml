@@ -1,0 +1,10 @@
+@model User
+<h3>Name: @Model.Name</h3>
+<h3>Alias @Model.Alias</h3>
+<h3>Email: @Model.Email</h3>
+
+<hr>
+
+
+<h3>Total Number of Posts: @Model.PostsCreated.Count</h3>
+<h3>Total Number of Likes: @ViewBag.Likes</h3>

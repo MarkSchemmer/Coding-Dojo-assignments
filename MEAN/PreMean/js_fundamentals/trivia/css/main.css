@@ -1,0 +1,42 @@
+
+.cont{
+    width:800px;
+    margin:auto;
+}
+
+nav button, nav h1{
+    display: inline-block;
+    margin-right:25px;
+}
+
+
+.info{
+    display: inline-block;
+    border-radius: 10px;
+    padding:25px;
+    width:250px;
+    margin-top:10px;
+}
+
+.info h1{
+    text-align: center;
+    border-bottom: 3px solid black;
+}
+
+.info button, .info div{
+    padding:80px;
+    display: block;
+    margin-bottom: 15px;
+    margin:auto;
+    margin-bottom: 10px;
+}
+
+.quest{
+    display: block;
+    margin:auto;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    height: 187px;
+    width: 187px;
+}
+
