@@ -1,0 +1,46 @@
+
+
+
+<style>
+
+    .submit{
+      width: 450px;
+      height: 300px;
+      border:1px solid silver;
+      padding:25px;
+      border-radius: 5px;
+      display: inline-block;
+    }
+
+</style>
+
+
+
+<div class="submit">
+  <form (submit)="createCake()">
+      <div class="form-group">
+          <h3>Submit a cake to be rated</h3>
+          <label for="formGroupExampleInput">Baker Name</label>
+          <input
+          type="text"
+          class="form-control"
+          placeholder="name here...."
+          [(ngModel)]="cakeObj.name"
+          name="name">
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">Another label</label>
+          <input
+          type="text"
+          class="form-control"
+          placeholder="enter url here...."
+          [(ngModel)]="cakeObj.url"
+          name="url">
+        </div>
+        <button class="btn btn-primary">Submit Cake</button>
+  </form>
+  {{ cakeObj | json }}
+</div>
+
+
+

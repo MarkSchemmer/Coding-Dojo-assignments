@@ -1,0 +1,60 @@
+
+<style>
+
+  .display{
+    width: 550px;
+    height: 300px;
+    padding:10px;
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: top;
+    border:1px solid silver;
+    border-radius: 5px;
+  }
+
+  .display img{
+    width: 150px;
+    height: 180px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right:10px;
+  }
+
+  .display .form{
+    width: 350px;
+    display: inline-block;
+  }
+
+  .display .formCont{
+    border: 1px solid silver;
+    padding:5px;
+    border-radius: 5px;
+  }
+
+</style>
+
+
+<div class="display">
+
+      <div class="formCont" *ngFor="let cake of cakes">
+        <img src="{{cake.url}}" (click)="showMes(cake._id)">
+           <div class="form">
+                <div class="form-group">
+                    <select class="form-control" [(ngModel)]="rateObj.stars" name="stars">
+                      <option selected>5</option>
+                      <option>4</option>
+                      <option>3</option>
+                      <option>2</option>
+                      <option>1</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" rows="2" [(ngModel)]="rateObj.comment" name="comment" placeholder="comment here......"></textarea>
+                </div>
+                  <button class="btn btn-primary" (click)="AddRatingToCake(cake._id)">Rate</button>
+            </div>
+      </div>
+</div>
+
+
+<app-display [message]="message" ></app-display>

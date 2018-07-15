@@ -8,7 +8,7 @@ const app = express()
 app.use(express.static(__dirname+'/client/dist/client'))
 console.log(__dirname)
 app.set('views', path.join(__dirname,'/client/dist/client'))
-app.set(mongoose.connect('mongodb://localhost/rest_task_api'), {useNewUrlParser:true})
+app.set(mongoose.connect('mongodb://localhost/rate_cake_api'), {useNewUrlParser:true})
 
 router(app)
 
