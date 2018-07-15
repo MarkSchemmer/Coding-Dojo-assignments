@@ -1,0 +1,133 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<style>
+
+div.cont {
+  width: 800px;
+  padding:50px;
+  margin:auto;
+}
+
+  li{
+    list-style-type: none;
+  }
+
+.intro{
+  margin-bottom:25px;
+}
+
+  .task{
+    width: 600px;
+    margin:auto;
+    margin-top: 25px;
+  }
+
+  .card{
+    margin-bottom: 20px;
+  }
+
+  .taskList h1{
+    margin-right:526px;
+  }
+
+  .newTask{
+    width: 400px;
+    margin-bottom:50px;
+  }
+
+
+</style>
+
+
+<div class="cont">
+
+      <div class="intro">
+        <h1>Restful CRUD</h1>
+      </div>
+
+      <div class="newTask">
+          <h1>New Task</h1>
+          <form (submit)="createNewTask()">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Title" [(ngModel)]="NewTaskObj.title" name="title">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control"
+                    placeholder="Description"
+                    id="exampleFormControlTextarea1"
+                    [(ngModel)]="NewTaskObj.desc"
+                    name="desc"
+                    rows="3"
+                    value="{{task?.desc}}">
+                  </textarea>
+                  </div>
+
+              <button type="submit" class="btn btn-primary">Create Task</button>
+            </form>
+      </div>
+
+      {{ NewTaskObj | json }}
+
+
+
+      <div class="taskList">
+          <h1>Task List</h1>
+          <div class="tasks" *ngFor="let task of obj">
+
+            <div *ngIf="task._id == EditWhich; else elseBlock">
+            <!-- show editable block -->
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <form (submit)="doneEditing(task._id)">
+                  <h3>Update Task</h3>
+                    <input class="form-control" type="text" [value]="task?.title" name="title" [(ngModel)]="updateTask.title">
+                    <br>
+                  <h6 class="card-subtitle mb-2 text-muted">Desciption</h6>
+                  <div class="form-group">
+                      <textarea class="form-control"
+                      name="desc"
+                      rows="3"
+                      [(ngModel)]="updateTask.desc"
+                      ></textarea>
+                    </div>
+                    <button class="btn btn-primary">Edit Now</button>
+                  </form>
+                </div>
+              </div>
+
+            </div>
+
+            <ng-template #elseBlock>
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                  <input class="form-control" type="text"  value="{{ task?.title }}"  readonly>
+                  <br>
+                <h6 class="card-subtitle mb-2 text-muted">Description:</h6>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="{{ task?.desc }}" readonly></textarea>
+                  </div>
+                <a href="#" class="card-link" (click)="EditMe(task._id)" >Edit</a>
+                <a href="#" class="card-link" (click)="deleteTask(task._id)" >Delete</a>
+              </div>
+            </div>
+          </ng-template>
+
+
+
+          </div>
+
+
+
+      </div>
+
+      <div class="editTask">
+
+      </div>
+
+
+  </div>
+
+
+

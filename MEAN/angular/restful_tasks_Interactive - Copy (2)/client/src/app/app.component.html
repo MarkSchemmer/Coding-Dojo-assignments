@@ -1,0 +1,48 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<style>
+  li{
+    list-style-type: none;
+  }
+
+.intro{
+  margin-bottom:25px;
+}
+
+  .task{
+    width: 600px;
+    margin:auto;
+    margin-top: 25px;
+  }
+</style>
+
+
+
+<div style="text-align:center">
+
+  <div class="intro">
+  <h1>Restful Tasks Interactive</h1>
+  <button (click)="allTasks()" class="btn btn-primary">Show Tasks</button>
+  </div>
+
+
+  <div class="allTasks" *ngFor="let task of obj">
+      <div class="task">
+        <div class="form-group row">
+          <label for="staticEmail" class="col-md-2 col-form-label">{{ task.title }}</label>
+          <div class="col-sm-10">
+              <button (click)="show(task._id)" class="btn btn-primary">Show</button>
+          </div>
+      </div>
+    </div>
+</div>
+
+<div class="info-task" *ngIf="info">
+        <h1>{{ info.title }}</h1>
+        <p>{{ info.desc }}</p>
+</div>
+
+</div>
+
+
+
