@@ -7,8 +7,14 @@ import { HttpService } from '../http.service';
   styleUrls: ['./submit.component.css']
 })
 export class SubmitComponent {
+
+  cakeImg : any 
+
   cakeObj : any
   constructor(private _http: HttpService) {
+
+      
+
       this.cakeObj = {
         name : '',
         url : '',
@@ -32,8 +38,9 @@ export class SubmitComponent {
   createCake(){
     this._http.createCake(this.cakeObj)
       .subscribe(data => {
+        this._http.getcakes()
         this.resetObjs()
-        this.getCakes()
+        console.log(data)
       })
   }
 

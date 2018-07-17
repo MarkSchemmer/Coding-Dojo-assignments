@@ -1,8 +1,8 @@
 
-function index(req, res){
-    res.render('index')
-}
+// function index(req, res){
+//     res.render('index')
+// }
 
-module.exports = {
-    index:index
-}
+// module.exports = {
+//     index:index
+// }

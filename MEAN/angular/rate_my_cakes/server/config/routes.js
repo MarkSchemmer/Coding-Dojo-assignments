@@ -1,6 +1,6 @@
 const bp = require('body-parser')
 const api = require('./controller')
-const page = require('./page_controller')
+//const page = require('./page_controller')
 
 
 /*
@@ -31,7 +31,7 @@ function router(app)
 
     app.delete('/api/cakes/:id', api.deleteCake)
 
-    app.get('/', page.index)
+ //   app.get('/', page.index)
 }
 
 module.exports = router

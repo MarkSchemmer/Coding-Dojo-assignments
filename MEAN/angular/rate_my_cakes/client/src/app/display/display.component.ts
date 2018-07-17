@@ -15,18 +15,22 @@ export class DisplayComponent {
   amount : Number
 
   constructor(private _http : HttpService) {
+
+    this.amount = 0
+
+    this.obj = {
+      name : '',
+      url : '',
+      ratings : []
+    }
+
    }
 
 
   show(id){
-    let amt = 0
     this._http.getCake(id)
       .subscribe(data => {
         this.obj = data
-        this.obj.ratings.forEach(x => {
-            amt += x.stars
-        })
-        this.amount = amt/this.obj.ratings.length
       })
   }
 
