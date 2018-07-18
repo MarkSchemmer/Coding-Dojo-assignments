@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-router',
@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RouterComponent implements OnInit {
 
-  constructor() { }
+  @Input() cityJson : string
+
+  constructor() {
+
+  }
 
   ngOnInit() {
   }
