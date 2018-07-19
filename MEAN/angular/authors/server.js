@@ -9,7 +9,11 @@ const app = express()
 app.use(express.static(__dirname+'/client/dist/client'))
 console.log(__dirname)
 app.set('views', path.join(__dirname,'/client/dist/client'))
-app.set(mongoose.connect('mongodb://localhost/auth'), {useNewUrlParser:true})
+app.set(mongoose.connect('mongodb://localhost/auth1'), {useNewUrlParser:true})
+
+
+
+router(app)
 
 
 

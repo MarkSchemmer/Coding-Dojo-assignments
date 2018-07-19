@@ -1,0 +1,34 @@
+
+<style>
+    tr td a {
+      margin-right : 15px;
+    }
+</style>
+
+
+<a href="#" [routerLink]="['/new']">Add a new Author</a>
+<h3>We have quotes by :</h3>
+
+<table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Author</th>
+          <th scope="col">Actions Available</th>
+        </tr>
+      </thead>
+      <tbody>
+                    <tr *ngFor="let auth of authors">
+                      <th scope="row">{{ auth.name }}</th>
+                      <td>
+                        <a
+                        (click)="edit(auth._id)"
+                        class="btn btn-primary">Edit</a>
+
+                        <a href="#"
+                        (click)="deleteAuth(auth._id)"
+                        class="btn btn-primary">Delete</a>
+
+                      </td>
+                    </tr>
+      </tbody>
+</table>
