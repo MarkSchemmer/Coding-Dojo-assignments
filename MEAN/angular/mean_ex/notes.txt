@@ -1,0 +1,51 @@
+
+
+<select name="rating" (input)="ratecake.rating = $event.target.value"> -> to get rid of two way data binding..
+
+function editQuote(req,res)
+{
+    Quotes.findByIdAndUpdate(req.parms.id, req.body, {              -> for unique use ....
+            runValidators: true,
+            context: "query"
+        })
+        .then(data=>res.json(data))
+        .catch(errs=>res.json(errs))
+}
+
+
+
+
+models for unique 
+
+
+var mongoose = require('mongoose');
+var uniqueValidator = require('mongoose-unique-validator');var mon
+
+mongoose.connect("mongodb://localhost:27017/quoteAuthordb4",{useNewUrlParser: true}, (errs)=>console.log(errs));
+
+const QuoteSchema = new mongoose.Schema({
+    quote: {
+        type: String
+    },
+    rating: {
+        type: Number, 
+        default: 0
+    }
+},{timestamps: true})
+
+const AuthorSchema = new mongoose.Schema({
+    name: {
+        type: String,
+        minlength: [2, "Must be at least two characters"],
+        unique: true
+    },
+    quotes: [QuoteSchema]
+},{timestamps: true});
+
+AuthorSchema.plugin(uniqueValidator,{message:"Must be unique 123"});
+
+// const Quotes = mongoose.model('quotes',QuoteSchema);
+
+const Authors = mongoose.model('author', AuthorSchema);
+
+module.exports = Authors;
