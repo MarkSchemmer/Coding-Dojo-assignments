@@ -1,5 +1,7 @@
 
 
+remember .id(), and .save() for updating a sub object...
+
 <select name="rating" (input)="ratecake.rating = $event.target.value"> -> to get rid of two way data binding..
 
 function editQuote(req,res)
@@ -10,6 +12,22 @@ function editQuote(req,res)
         })
         .then(data=>res.json(data))
         .catch(errs=>res.json(errs))
+}
+
+deleteQuote(id,q_id)
+{
+  return this._http.delete("/api/quotes/"+id+'/'+q_id);
+}
+
+
+function deleteQuote(req,res)
+{
+    Authors.findById(req.params.id).then(author => {
+        author.quotes.id(req.params.q_id).remove()
+        author.save()
+    })
+    .then(data=>res.json({status: "deleted", data: data}))
+    .catch(errs=>res.json({status: "not deleted", data: errs}))
 }
 
 
