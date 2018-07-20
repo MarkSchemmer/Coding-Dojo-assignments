@@ -16,7 +16,7 @@ function productById (req, res) {
 
 function updateProductById (req, res) {
     product
-    .findByIdAndUpdate(req.params.id, req.body)
+    .findByIdAndUpdate(req.params.id, req.body, { runValidators:true })
     .then(dt => res.json(dt))
     .catch(er => res.json(er))
 }

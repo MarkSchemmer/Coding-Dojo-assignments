@@ -1,0 +1,106 @@
+
+<style>
+    .create{
+      width: 500px;
+    }
+
+    .create a {
+      margin-right: 10px;
+    }
+
+    .create button {
+      margin-right : 10px;
+    }
+
+  .red{
+    padding:10px;
+    color: snow;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-weight: bolder;
+    opacity: .6;
+  }
+
+  </style>
+
+<h3>Edit Product</h3>
+
+  <div class="create row">
+      <div class="col s12">
+        <div class="row">
+            <div class="helper-text red" *ngIf="errors?.title">
+                {{ errors?.title }}
+            </div>
+
+            <div *ngIf="title.invalid && (title.dirty || title.touched)"
+            class="helper-text red" >
+
+               <div *ngIf="title.errors.required">
+                     title is required!
+               </div>
+
+               <div *ngIf="title.errors.minlength">
+                     title must be greater than 4 chars
+               </div>
+
+           </div>
+
+          <div class="input-field">
+
+            <label for="product.title"></label>
+
+            <input
+            required
+            minlength="4"
+            type="text"
+            class="validate"
+            [(ngModel)]="product.title"
+            #title="ngModel"
+            >
+          </div>
+          <div class="helper-text red" *ngIf="errors?.price">
+              {{ errors?.price }}
+          </div>
+
+
+          <div *ngIf="price.invalid && (price.dirty || price.touched)"
+          class="helper-text red" >
+
+             <div *ngIf="price.errors.required">
+                   Price is required!
+             </div>
+         </div>
+
+
+
+          <div class="input-field">
+              <input
+              required
+              type="text"
+              class="validate"
+              [(ngModel)]="product.price"
+              #price="ngModel"
+              >
+          </div>
+          <div class="input-field">
+              <input
+
+              type="text"
+              class="validate"
+              [(ngModel)]="product.url"
+              >
+          </div>
+        </div>
+        <button [disabled]="(price.invalid || title.invalid)" class="waves-effect waves-light btn"
+        (click)="editProduct()" >edit Product</button>
+        <a class="waves-effect waves-light btn"
+        (click)="backToList()" >Cancal</a>
+      </div>
+  </div>
+
+
+
+{{ product | json }}
+
+
+

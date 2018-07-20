@@ -1,0 +1,28 @@
+
+
+<style>
+  .prod{
+    display: inline-block;
+    margin-right: 25px;
+  }
+
+  .prod img{
+    width: 150px;
+    height: 150px;
+  }
+
+  .prod button{
+    margin-right: 10px;
+  }
+
+</style>
+
+
+<h1>Product List</h1>
+
+<div class="prod" *ngFor="let prod of products">
+    <img src="{{ prod.url }}">
+    <p>{{ prod.price }}</p>
+    <button (click)="goEdit(prod._id)" class="waves-effect waves-light btn">Edit</button>
+    <button (click)="delete(prod._id)"  class="waves-effect waves-light btn">Delete</button>
+</div>
